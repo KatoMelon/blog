@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://katomelon.github.io/blog"
+baseurl = "https://katomelon.github.io"
 languageCode = "en-us"
 paginate = 5
 title = "Hugo Theme Stack Starter"
