@@ -5,7 +5,7 @@ rssFullContent = true
 favicon = "/favicon.png"
 
 [footer]
-since = 2020
+since = 2023
 customText = ""
 
 [dateFormat]
@@ -27,7 +27,7 @@ readingTime = true
 
 [article.license]
 enabled = true
-default = "Licensed under CC BY-NC-SA 4.0"
+default = "如无其他声明，本站所有内容以 CC BY-NC-SA 4.0 协议共享"
 
 ## Widgets
 [[widgets.homepage]]
