@@ -10,6 +10,9 @@ tags:
     - 人工智能导论
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
+
+![Page Views Count](https://badges.toozhao.com/badges/01HJ3GGQ6MR66VM70BVZS4SSVX/green.svg)
+
 ## 本章
 
 分两个主要部分：实用AI工具和计算机视觉。前一部分介绍一些框架和工具，内容不多，后一部分介绍计算机视觉，占大头。
