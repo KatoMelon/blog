@@ -27,7 +27,7 @@ readingTime = true
 
 [article.license]
 enabled = true
-default = "如无其他声明，本站所有内容以 CC BY-NC-SA 4.0 协议共享"
+default = "除非另有声明，本站所有内容以 CC BY-NC-SA 4.0 协议共享"
 
 ## Widgets
 [[widgets.homepage]]

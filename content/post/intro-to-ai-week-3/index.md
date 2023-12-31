@@ -8,7 +8,6 @@ categories:
     - 课业
 tags:
     - 人工智能导论
-weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
 ![Page Views Count](https://badges.toozhao.com/badges/01HJ3GGQ6MR66VM70BVZS4SSVX/green.svg)
