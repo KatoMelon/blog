@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Java on KatMelon's Blog</title><link>https://katomelon.github.io/blog/tags/java/</link><description>Recent content in Java on KatMelon's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://katomelon.github.io/blog/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>JAVA高级语言程序设计 - Week1概念整理</title><link>https://katomelon.github.io/blog/p/java-w1/</link><pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate><guid>https://katomelon.github.io/blog/p/java-w1/</guid><description>&lt;h2 id="java-的历史">Java 的历史
+&lt;/h2>&lt;p>Sun 公司最早设计其运行在行动电话、PDA 上的编程语言，希望其是一门安全的语言，开发起来效率高。后面 PDA 失败了，重点转向了嵌入式软件系统，这时语言叫 Oak 语言。1993 年万维网出现，Mosaic 浏览器出现，该语言改名 Java，Mosaic 浏览器可以动态的下载 Java 代码运行（当时叫 applets），用作 Web 交互，允许用户在 Web 页面上打游戏、做表格之类的。&lt;/p>
+&lt;h2 id="java-的特性">Java 的特性
+&lt;/h2>&lt;p>能做绝大多数其他传统主流语言可做的东西，但更简洁，更简单。&lt;/p>
+&lt;ul>
+&lt;li>没有自动类型转换，是强类型语言&lt;/li>
+&lt;li>没有指针操作&lt;/li>
+&lt;li>没有 GOTO，没有全局变量，没有头文件&lt;/li>
+&lt;li>没有类似 C 语言的 struct 和 union（因为有面向对象了，没必要）&lt;/li>
+&lt;li>拥有自动垃圾回收机制（不需要手动 free 内存）&lt;/li>
+&lt;li>不允许多重继承&lt;/li>
+&lt;li>不兼容 C、C++&lt;/li>
+&lt;/ul>
+&lt;p>语言特性：&lt;/p>
+&lt;ul>
+&lt;li>简单（我是没觉得，啰嗦倒是真啰嗦）&lt;/li>
+&lt;li>面向对象&lt;/li>
+&lt;li>平台不相关（一次编写到处运行）&lt;/li>
+&lt;li>鲁棒（拥有错误检查）&lt;/li>
+&lt;li>安全（拥有权限控制特性）&lt;/li>
+&lt;li>多线程&lt;/li>
+&lt;li>动态&lt;/li>
+&lt;/ul>
+&lt;h2 id="java-程序的运行流程">Java 程序的运行流程
+&lt;/h2>&lt;p>Java 支持一次编写到处运行。Java 程序从编写到运行经历如下步骤：&lt;/p>
+&lt;ol>
+&lt;li>编写源代码，可以使用你喜欢的任意编辑器。&lt;/li>
+&lt;li>通过指令 javac 将代码&lt;strong>编译&lt;/strong>成&lt;strong>字节码&lt;/strong>（xxx.class）（而非直接的可执行文件）&lt;/li>
+&lt;li>通过指令 java 运行该字节码。会先检查这段字节码的所有字节是否合法，是否违反 java 安全限制，随后通过&lt;strong>解释器&lt;/strong>在对应平台上的 Java 虚拟机（JVM，Java Virtual Machine）上执行该程序。&lt;/li>
+&lt;/ol>
+&lt;p>对于程序 MyProgram.java，应当先运行 &lt;code>javac MyProgram.java&lt;/code>，随后运行 &lt;code>java MyProgram&lt;/code>（注意没有.class），就可以运行程序了。&lt;/p>
+&lt;p>因为不同平台的指令集不同，Java 没有采取交叉编译，而是通过先编译成字节码再在对应平台通过平台自己的解释器执行，实现跨平台特性，即一次编写到处运行。
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240507203433.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="java-基础">Java 基础
+&lt;/h2>&lt;p>这是一段最基础的 Java 代码：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">* MyProgram.java
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">*
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">* Created on 28 June 2010, 17:56
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">*/&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kd">class&lt;/span> &lt;span class="nc">MyProgram&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kd">static&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">main&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">args&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello World!&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="-myprogramjava">/** MyProgram.java&amp;hellip;
+&lt;/h3>&lt;p>Java 的注释和 C 比较类似：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>// 这是单行注释&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>/* 这是&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>多行&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>注释 */&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>长下面这样的叫 javadoc 注释。
+Javadoc 这个工具能识别代码内的 Javadoc 注释，然后把他们整理成文档。
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240507210728.png"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="public-class-myprogram-">public class MyProgram {
+&lt;/h3>&lt;p>Java 对面向对象的崇拜已经到了痴狂的地步，所以每个程序的最根部应该是一个类，例如本程序的类名就是 MyProgram。（实际上在 Java21 还是 22 开始就允许你单写 main 开始，不过英方这边教的我建议还是按着 Java8 的规范来，虽然他确实要求用 OpenJDK21）
+如果该类为 public，则要求&lt;strong>该代码的文件名必须等于类名&lt;/strong>。例如此文件应当为 MyProgram.java。&lt;/p>
+&lt;h3 id="public-static-void-mainstring-args-">public static void main(String[] args) {
+&lt;/h3>&lt;p>我们一行一行看：&lt;/p>
+&lt;ul>
+&lt;li>public：是指访问限制。public 说明该方法全局可访问。&lt;/li>
+&lt;li>static：表示静态方法。即该方法为单例，与类相关，而非与对象相关。后面面向对象会讲。&lt;/li>
+&lt;li>void：表示返回值类型。void 表示没有返回值。&lt;/li>
+&lt;li>main：方法名。名为 main 的方法会被系统当作程序入口，和 C 类似。&lt;/li>
+&lt;li>String[] args：指通过命令行传入的其他参数。详见 Lab 1.&lt;/li>
+&lt;/ul>
+&lt;h3 id="systemoutprintlnhello-world">System.out.println(&amp;ldquo;Hello World!&amp;rdquo;);
+&lt;/h3>&lt;p>这个东西类似 C 语言的 printf。ln 表示打印完了会带一个换行。&lt;/p>
+&lt;h2 id="java-程序的编写编译和运行">Java 程序的编写、编译和运行
+&lt;/h2>&lt;p>编写代码时，应当遵循 KISS 原则：Keep It Simple Stupid
+JDK = Java Development Kit，开发套件，安装之后可以编译 Java 程序。
+JRE = Java Runtime Environment，运行时环境，安装后可以运行 Java 程序。&lt;/p>
+&lt;p>现在基本上安装 JDK 时里面会带一份 JRE，不然光让开发不让运行也太蠢了。&lt;/p>
+&lt;p>一些基本的 JDK 指令：&lt;/p>
+&lt;ul>
+&lt;li>javac: compiler&lt;/li>
+&lt;li>java: launcher for Java applications&lt;/li>
+&lt;li>javadoc: API documentation generator&lt;/li>
+&lt;li>jar: manages JAR files&lt;/li>
+&lt;li>jdb: Java debugger&lt;/li>
+&lt;/ul>
+&lt;h2 id="有关抄袭和剽窃">有关抄袭和剽窃
+&lt;/h2>&lt;p>不要直接复制别人的代码。在你被允许使用他人代码时（例如 Mini Project 使用老师给的代码），应该写明 Javadoc 注释说明代码来源。&lt;/p>
+&lt;h2 id="java-编程基础">Java 编程基础
+&lt;/h2>&lt;p>最基本的程序结构模板如下：（暂时还没提到面向对象）&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">class&lt;/span> &lt;span class="nc">ClassName&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kd">static&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">main&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">args&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c1">// 声明变量和方法&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c1">// 写表达式...&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="变量">变量
+&lt;/h3>&lt;p>Java 的变量可以在程序中的任何位置声明。变量声明方法与 C 语言类似。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">typeName&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">name1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">name2&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">...&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">namen&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">typeName&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">name1&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">initvalue&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>推荐的标识符命名方式：驼峰标记法。变量名使用小驼峰，类名使用大驼峰。&lt;/p>
+&lt;h3 id="数据类型">数据类型
+&lt;/h3>&lt;p>Java 是强类型语言。意思是你声明变量时就需要指定该变量的数据类型。
+基本数据类型：
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240508131800.png"
+loading="lazy"
+>
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240508131816.png"
+loading="lazy"
+>
+注意：0.2363 类型的数据默认当成 double，0.2363F 才是单精度浮点；86827263927 默认当作 int，86827263927L 才会当作 long。&lt;/p>
+&lt;p>每种数据类型在 Java 中都有一个默认值，某些时候 Java 会把变量初始化为默认值。
+字符串 String 不是 Java 的基本类型，而是一种对象。&lt;/p>
+&lt;h4 id="类型转换">类型转换
+&lt;/h4>&lt;p>Java 变量类型可自低到高自动无损转换。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kt">byte&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&amp;gt;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">short&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&amp;gt;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&amp;gt;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">long&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&amp;gt;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">float&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&amp;gt;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">double&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>反向转换时需要使用强制转换声明（Type Cast）：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">j&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="p">)(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">3&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// j = 8&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">3&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// i = 7&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>反向转换时，由于变量范围问题，转换结果可能会被截断或溢出。&lt;/p>
+&lt;p>// TODO：写一份转换对照&lt;/p>
+&lt;h3 id="保留字关键字">保留字/关键字
+&lt;/h3>&lt;p>这些词语不能当作用户标识符（变量名类名方法名等等）
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240508132318.png"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="赋值与操作符">赋值与操作符
+&lt;/h3>&lt;p>基本用法：赋值符还是 &lt;code>=&lt;/code>，自增自减运算符 &lt;code>++&lt;/code> 和 &lt;code>--&lt;/code> 也能用。&lt;/p>
+&lt;p>&lt;code>++i&lt;/code> 和 &lt;code>i++&lt;/code> 的效果和 C 语言也还是一样的，前者自身作为表达式会返回 &lt;code>i+1&lt;/code>，后者自身作为表达式会返回 &lt;code>i&lt;/code>，二者都会将 &lt;code>i&lt;/code> 本身的值加一。
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240508133057.png"
+loading="lazy"
+>&lt;/p>
+&lt;h4 id="代数操作符">代数操作符
+&lt;/h4>&lt;p>加减乘除，取模（余数）。
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240508133158.png"
+loading="lazy"
+>
+所有代数操作符都可以与赋值符结合在一起用。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">3&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">+=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">7&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// c = c + 7 = ?&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">-=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">5&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// c = c - 5 = ?&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">6&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// c = c * 6 = ?&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">/=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">3&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// c = c / 3 = ?&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">%=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">3&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// c = c % 3 = ?&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="条件运算符三元运算符">条件运算符（三元运算符）
+&lt;/h4>&lt;p>比较特殊的一种运算符。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">这个条件成立吗&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">?&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">如果成立值就是我&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">否则就是我&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="操作符优先级">操作符优先级
+&lt;/h4>&lt;p>高优先级操作符优先运算，低优先级运算符后运算。
+同优先级的运算符：二元操作符从左向右运算，赋值符从右向左运算。
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240508134127.png"
+loading="lazy"
+>&lt;/p>
+&lt;h4 id="关系运算符逻辑运算符">关系运算符/逻辑运算符
+&lt;/h4>&lt;p>和 C 语言类似。
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240508134415.png"
+loading="lazy"
+>
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240508134439.png"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="控制结构">控制结构
+&lt;/h3>&lt;p>选择结构：if、if else、switch
+循环结构：while、do while、for&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">这里的条件成立&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;passed&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">else&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;failed&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>switch 结构和 C 类似，需要写 break，否则会一直执行下面的东西。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kt">char&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">grade&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="sc">&amp;#39;a&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">switch&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">grade&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">case&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="sc">&amp;#39;a&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;excellent&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">case&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="sc">&amp;#39;b&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;good&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">case&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="sc">&amp;#39;c&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;not bad&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">case&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="sc">&amp;#39;d&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;bad&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">default&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;no such grade!&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>for 循环跟 C 的写法很类似&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">0&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">3&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="err">“&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">”&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>do while 会先做那段代码块里的东西，再判断条件如何。也就是不管什么情况都会先把代码块里的东西执行一次。while 用法和 C 语言类似。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="k">do&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;i = &amp;#34;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">3&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c1">// 或者&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">0&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">3&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;i = &amp;#34;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>break：退出当前循环
+continue：结束当前循环轮次
+和 C 语言类似&lt;/p>
+&lt;p>Java 支持内层和外层循环标记，标记后可以在内层直接退出外层循环。
+通过 outer inner 标记内层和外层循环，跳出（continue 或 break）时选择跳出外层循环。
+如图：
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240508163157.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="面向对象基础">面向对象基础
+&lt;/h2>&lt;p>Java 是面向对象的编程语言，最基础的实体是&lt;strong>类（Class）&lt;/strong>。&lt;/p>
+&lt;p>面向对象的设计方法将代码拆分为由类规划的对象。对象拥有自己的属性和方法。&lt;/p>
+&lt;p>例如，我要设计一个系统，该系统和动物、动物行为相关。
+现在我要设计小猫。
+小猫拥有小猫的&lt;strong>属性（Properties）&lt;/strong>：例如毛色、年龄，名字、体重等等，这些数据是和这只小猫相关的，一只小猫可以拥有这些数据作为属性。
+小猫拥有小猫的动作（&lt;strong>方法（Methods）&lt;/strong>）：例如叫、吃东西、跑步等等。小猫可以拥有这些东西作为&lt;strong>函数方法&lt;/strong>，也就是这只小猫的动作。&lt;/p>
+&lt;p>我们通过&lt;strong>编写一个类&lt;/strong>来定义这个对象到底拥有什么。类就像是一个饼干模具，决定了饼干长什么样子，但是类本身并不是一个饼干。
+一旦类编写好了，我们通过代码，&lt;strong>基于类来创建对象（Object）&lt;/strong>。创建出的对象拥有这个类定义的全部内容。每个属性和方法现在都将&lt;strong>属于这个对象而非类&lt;/strong>（除非声明为静态方法/属性）。&lt;/p>
+&lt;p>为了减少代码量，增加可维护性，类是可以&lt;strong>进行继承&lt;/strong>的。例如，我的代码要拓展到动物，那么我定义一个类叫&lt;strong>动物&lt;/strong>，让接下来的小猫、小狗都&lt;strong>继承这个动物&lt;/strong>。这样，一旦后续需求变动（例如，需要为所有动物都添加“身高”的属性），那么我&lt;strong>直接修改动物类的属性&lt;/strong>，继承了其的小猫小狗等&lt;strong>都会&lt;/strong>拥有这个身高属性，就不需要一个一个修改这么多具体动物的类了。&lt;/p>
+&lt;p>面向对象更加灵活，还支持&lt;strong>多态、重载和重写&lt;/strong>。&lt;/p>
+&lt;p>动物类实现了方法移动，但是狗可以跑，而兔子可以跳，这时狗和兔子就可以分别 &lt;strong>重写（Override）&lt;/strong> 自己的移动方法，实现自己的逻辑。狗的跑只需要跑的距离作为参数，而兔子的跳需要跳的距离和高度两个参数，于是就可以在狗和兔子中分别&lt;strong>重载（Overload）&lt;/strong> 这个方法，使其能够接收不同的参数，返回不同的内容，抛出不同的异常等等。
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240508171141.png"
+loading="lazy"
+>
+注意重载方法必须修改参数，不允许不动参数只动返回，那就报错了。
+&lt;img src="https://katomelon.github.io/blog/blog/p/java-w1/assets/Pasted%20image%2020240508171647.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>面向对象还支持&lt;strong>多态&lt;/strong>。继承了动物的小猫既是动物，也是小猫。当我使用 Animal cat = new Cat() 将一个 Cat 送进 Animal 类型的变量时，他就既具有动物的特性也有小猫的特性，这里我们后面再聊。&lt;/p>
+&lt;p>还有更多特性：构造函数等等&amp;hellip;
+我们先有一个整体、宏观的印象，具体的东西我们后面再聊。&lt;/p></description></item></channel></rss>
