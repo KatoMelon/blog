@@ -1,0 +1,767 @@
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="数据库技术与应用 课程作业及答案"><title>数据库 - 作业题目 & 实验报告整理</title>
+<link rel=canonical href=https://katomelon.github.io/blog/p/db-hw/><link rel=stylesheet href=/blog/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css><meta property='og:title' content="数据库 - 作业题目 & 实验报告整理"><meta property='og:description' content="数据库技术与应用 课程作业及答案"><meta property='og:url' content='https://katomelon.github.io/blog/p/db-hw/'><meta property='og:site_name' content="KatMelon's Blog"><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='数据库'><meta property='article:published_time' content='2024-08-06T00:00:00+00:00'><meta property='article:modified_time' content='2024-08-06T00:00:00+00:00'><meta name=twitter:title content="数据库 - 作业题目 & 实验报告整理"><meta name=twitter:description content="数据库技术与应用 课程作业及答案"><link rel="shortcut icon" href=/favicon.png></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/blog/><img src=/blog/img/avatar_hu_ba03ba61d53929d4.png width=300 height=300 class=site-logo loading=lazy alt=Avatar>
+</a><span class=emoji>😙</span></figure><div class=site-meta><h1 class=site-name><a href=/blog>KatMelon's Blog</a></h1><h2 class=site-description>继续精进.</h2></div></header><ol class=menu-social><li><a href=https://github.com/KatoMelon target=_blank title=GitHub rel=me><svg class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/blog/><svg class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>主页</span></a></li><li><a href=/blog/archives/><svg class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>归档</span></a></li><li><a href=/blog/search/><svg class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>搜索</span></a></li><li><a href=/blog/%E5%85%B3%E4%BA%8E/><svg class="icon icon-tabler icon-tabler-info-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1018 0A9 9 0 003 12"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg>
+<span>关于</span></a></li><li class=menu-bottom-section><ol class=menu><li id=dark-mode-toggle><svg class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>暗色模式</span></li></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#习题及答案整理>习题及答案整理</a><ol><li><a href=#一>一</a></li><li><a href=#二>二</a></li><li><a href=#三>三</a></li><li><a href=#四>四</a></li><li><a href=#五>五</a></li><li><a href=#六>六</a></li><li><a href=#七>七</a></li><li><a href=#八>八</a></li><li><a href=#九>九</a></li><li><a href=#十>十</a></li><li><a href=#十一>十一</a></li><li><a href=#十二>十二</a></li><li><a href=#十三上机实验三>十三（上机实验三）</a></li></ol></li></ol><ol><li><a href=#本机主机名与-ip-地址作业要求>本机主机名与 IP 地址（作业要求）</a></li><li><a href=#实验-1-1-在本机windows安装-mysql-community-83>实验 1-1 在本机（WIndows）安装 MySQL Community 8.3</a><ol><li><a href=#下载与安装>下载与安装</a></li><li><a href=#检查安装是否成功>检查安装是否成功</a></li></ol></li><li><a href=#实验-1-2-在本机windows安装-postgresql>实验 1-2 在本机（Windows）安装 PostgreSQL</a><ol><li><a href=#下载与安装-1>下载与安装</a></li><li><a href=#检查安装是否成功-1>检查安装是否成功</a></li></ol></li><li><a href=#实验-1-3-在-linux-云服务器centos-7上通过-docker-部署运行-mariadb>实验 1-3 在 Linux 云服务器（CentOS 7）上通过 Docker 部署运行 MariaDB</a><ol><li><a href=#检查是否安装成功>检查是否安装成功</a></li></ol></li></ol><ol><li><ol><li><a href=#实验-2-1-通过命令行-sql-语句操作数据库>实验 2-1 通过命令行 SQL 语句操作数据库</a></li><li><a href=#添加包含自己学号和姓名的表>添加包含自己学号和姓名的表</a><ol><li><a href=#建库建表数据定义>建库建表，数据定义</a></li><li><a href=#插入数据>插入数据</a></li></ol></li><li><a href=#实验-2-2-使用-navicat-查看数据库>实验 2-2 使用 Navicat 查看数据库</a></li></ol></li></ol><ol><li><a href=#实验设计背景>实验设计背景</a></li><li><a href=#数据关系设计>数据关系设计</a><ol><li><a href=#补充说明>补充说明</a></li><li><a href=#er-图>ER 图</a></li></ol></li><li><a href=#建表-sql-语句>建表 SQL 语句</a><ol><li><a href=#建表设计>建表设计</a><ol><li><a href=#用户表users>用户表（Users）</a></li><li><a href=#版块表forums>版块表（Forums）</a></li><li><a href=#版块管理员表forumadmins>版块管理员表（ForumAdmins）</a></li><li><a href=#帖子表posts>帖子表（Posts）</a></li><li><a href=#回复表replies>回复表（Replies）</a></li></ol></li></ol></li><li><a href=#实践建库--建表>实践建库 & 建表</a></li></ol><ol><li><a href=#准备实验环境建库建表录入数据>准备实验环境（建库建表，录入数据）</a></li><li><a href=#习题-622-查询查询结果>习题 6.2.2 查询&查询结果</a><ol><li><a href=#a-查询硬盘容量至少-30g-的笔记本电脑制造商及该电脑的速度>a) 查询硬盘容量至少 30G 的笔记本电脑制造商及该电脑的速度</a></li><li><a href=#b-查询制造商-b-生产的任意类型的所有产品的型号和价格>b) 查询制造商 B 生产的任意类型的所有产品的型号和价格</a></li><li><a href=#c-查询只卖笔记本电脑不卖-pc-的厂商>c) 查询只卖笔记本电脑不卖 PC 的厂商</a></li><li><a href=#d-查询出现在两种或两种以上-pc-中的硬盘的大小>d) 查询出现在两种或两种以上 PC 中的硬盘的大小</a></li><li><a href=#e-查询每对具有相同速度和-ram-的-pc-的型号每一对只能列出一次-例如若-ij-已被列出则-ji-就不能再被列出>e) 查询每对具有相同速度和 RAM 的 PC 的型号。每一对只能列出一次; 例如，若 (i,j) 已被列出，则 (j,i) 就不能再被列出。</a></li></ol></li><li><a href=#习题-631-查询查询结果>习题 6.3.1 查询&查询结果</a><ol><li><a href=#a-找出速度在-30-以上的-pc-制造商>a) 找出速度在 3.0 以上的 PC 制造商</a></li><li><a href=#b-找出价格最高的打印机>b) 找出价格最高的打印机</a></li></ol></li><li><a href=#选作习题-646-查询查询结果>【选作】习题 6.4.6 查询&查询结果</a><ol><li><a href=#a-查询-pc-的平均速度>a) 查询 PC 的平均速度：</a></li><li><a href=#b-查询价格高于-1000-的笔记本电脑的平均速度>b) 查询价格高于 $1000 的笔记本电脑的平均速度：</a></li><li><a href=#c-查询厂商a生产的-pc-的平均价格>c) 查询厂商“A”生产的 PC 的平均价格：</a></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/blog/categories/%E8%AF%BE%E4%B8%9A/ style=background-color:#2a9d8f;color:#fff>课业</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/blog/p/db-hw/>数据库 - 作业题目 & 实验报告整理</a></h2><h3 class=article-subtitle>数据库技术与应用 课程作业及答案</h3></div><footer class=article-time><div><svg class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published>Aug 06, 2024</time></div><div><svg class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>阅读时长: 11 分钟</time></div></footer></div></header><section class=article-content><p>注意下：如果你不是电管专业的，那么你可能需要的并不是这个文档。这个文档是电管选修课“数据库技术与应用”的资料整理。其他专业的数据库似乎是英方课。</p><p>上面是习题，往下翻是实验报告。</p><h2 id=习题及答案整理>习题及答案整理</h2><h3 id=一>一</h3><p>简述数据库管理系统的主要功能
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101104.png loading=lazy></p><h3 id=二>二</h3><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101239.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101304.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101320.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101334.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101344.png loading=lazy></p><h3 id=三>三</h3><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101434.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101449.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101504.png loading=lazy></p><h3 id=四>四</h3><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101553.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101608.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101619.png loading=lazy></p><h3 id=五>五</h3><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101720.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101759.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101812.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101819.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101841.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101927.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513101954.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102007.png loading=lazy></p><h3 id=六>六</h3><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102154.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102202.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102218.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102229.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102239.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102409.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102441.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102534.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102545.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102637.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102652.png loading=lazy></p><h3 id=七>七</h3><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102743.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102759.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102823.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102851.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102902.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513102917.png loading=lazy></p><h3 id=八>八</h3><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240513103023.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513103052.png loading=lazy></p><h3 id=九>九</h3><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240513103223.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513103248.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513103255.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513103302.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240513103314.png loading=lazy></p><h3 id=十>十</h3><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240612202449.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612202534.png loading=lazy></p><h3 id=十一>十一</h3><p>背景习题 3.3.1 在上一题</p><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240612202655.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612202740.png loading=lazy></p><h3 id=十二>十二</h3><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240612202923.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612202935.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612202947.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612203009.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612203015.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612203022.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612203028.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612203035.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612203042.png loading=lazy></p><h3 id=十三上机实验三>十三（上机实验三）</h3><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240612203539.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612203954.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612204034.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612204041.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612204122.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612204134.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612204143.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612204149.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612204154.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612204231.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612204236.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612204411.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612204416.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240612204425.png loading=lazy></p><h1 id=实验报告一--二>实验报告一 & 二</h1><h2 id=本机主机名与-ip-地址作业要求>本机主机名与 IP 地址（作业要求）</h2><p>指令 <code>ipconfig -all</code> 会查询到本机所有的网络状态。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404123757.png loading=lazy>
+本机的校园网连接信息为：
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404123854.png loading=lazy></p><h2 id=实验-1-1-在本机windows安装-mysql-community-83>实验 1-1 在本机（WIndows）安装 MySQL Community 8.3</h2><h3 id=下载与安装>下载与安装</h3><p>下载 MySQL Community Server 8.3 版本的 msi 安装包
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404124050.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404124302.png loading=lazy>
+我选择 Custom 安装模式，修改安装位置将 MySQL 安装到 F 盘下。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404124433.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404124547.png loading=lazy>
+安装完成后允许打开 Configurator，把数据目录也配置到 F 盘下。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404124632.png loading=lazy>
+配置本机为开发用设备，设置端口号 3306，
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404124817.png loading=lazy>
+配置用户。除了根用户外我额外配置了一个以我学号和姓名命名的 DB Admin 角色。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404125014.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404125110.png loading=lazy>
+其他设置（服务等）保持默认。Configurator 自动开始初始化。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404125228.png loading=lazy>
+安装完成。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404125240.png loading=lazy></p><h3 id=检查安装是否成功>检查安装是否成功</h3><p>通过命令行，以我的姓名学号用户身份连接该 MySQL 数据库：
+（上面那条报错是 PowerShell 不允许把当前目录下的 exe 以指令形式执行，忘了这茬事了）</p><p>连接正常，安装成功。</p><h2 id=实验-1-2-在本机windows安装-postgresql>实验 1-2 在本机（Windows）安装 PostgreSQL</h2><p>作业要求：</p><blockquote><p>作业 1：上机安装一个 DBMS，建议使用 mySQL 或<strong>华为 openGauss</strong></p></blockquote><p>根据华为官网消息，OpenGauss 数据库内核为 PostgreSQL，而后者使用 BSD 开源，且社区相对更完善。本次实验选择安装 PostgreSQL 作为实验内容。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404130339.png loading=lazy></p><h3 id=下载与安装-1>下载与安装</h3><p>下载 Postgres for Windows 安装包。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404131137.png loading=lazy>
+把安装目录切到 F 盘</p><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240404131233.png loading=lazy>
+确认安装所有组件（之前我装过一次，PgAdmin 之类的还留在本机上）
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404131318.png loading=lazy>
+数据目录也放 F 盘
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404131346.png loading=lazy>
+为根用户设置密码，设置服务端口为 5432。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404131433.png loading=lazy>
+不配置本地化，直接一路默认 Next。开始安装。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404131530.png loading=lazy>
+安装完毕。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404132222.png loading=lazy></p><h3 id=检查安装是否成功-1>检查安装是否成功</h3><p>pg 提供了一个 SQL Shell 供我们测试。</p><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240404132455.png loading=lazy>
+安装成功。</p><h2 id=实验-1-3-在-linux-云服务器centos-7上通过-docker-部署运行-mariadb>实验 1-3 在 Linux 云服务器（CentOS 7）上通过 Docker 部署运行 MariaDB</h2><p>有一台 2h2g 的轻量云服务器，公网 IP 为 （censored）。实验在该机器上安装 MariaDB。
+MariaDB 作为 MySQL 的一个分支，旨在规避 MySQL 被 Oracle 闭源的风险，保持了开源和社区驱动的特性，具有性能强大、稳定可靠的优点，支持更多存储引擎并拥有活跃的社区支持。而 Docker 作为轻量级的容器技术，可以将应用程序及其依赖项打包到一个可移植的容器中，实现快速部署、跨平台运行、隔离性和快速启动停止，适用于微服务架构和持续集成部署。是现代运维比较常用的一个方案。
+查询可用的 Docker 镜像：</p><p>拉取 Docker Hub 社区镜像。</p><p>起容器。映射到 3306 上。</p><p>放开一下 3306 端口
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404145158.png loading=lazy>
+检查下容器运行情况
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404160147.png loading=lazy>
+容器运行正常，安装完毕。</p><h3 id=检查是否安装成功>检查是否安装成功</h3><p>用 Navicat 点一下</p><p>连接没有问题。
+检查一下 默认表存在。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404160302.png loading=lazy>
+安装成功。
+（安全起见，这个容器在确认安装正常后就已经销毁了）</p><h1 id=实验报告二>实验报告二</h1><p>实验二要求将习题 2.4.1 中的数据存储到数据库中。该习题的数据如下。
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404161346.png loading=lazy>
+实验一中安装了三种数据库，但是因为都是关系型数据库，所以操作上大体没有差别。本次实验使用 MySQL 操作。</p><h3 id=实验-2-1-通过命令行-sql-语句操作数据库>实验 2-1 通过命令行 SQL 语句操作数据库</h3><h3 id=添加包含自己学号和姓名的表>添加包含自己学号和姓名的表</h3><p>系作业要求。编写 SQL 语句建表：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>Students</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>StudentID</span><span class=w> </span><span class=nb>BIGINT</span><span class=p>(</span><span class=mi>10</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Name</span><span class=w> </span><span class=n>NVARCHAR</span><span class=p>(</span><span class=mi>10</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240404164235.png loading=lazy>
+插入我的学号和姓名：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>INSERT</span><span class=w> </span><span class=k>INTO</span><span class=w> </span><span class=n>Students</span><span class=w> </span><span class=p>(</span><span class=n>StudentID</span><span class=p>,</span><span class=w> </span><span class=n>Name</span><span class=p>)</span><span class=w> </span><span class=k>VALUES</span><span class=w> </span><span class=p>(</span><span class=mi>123456789</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;censored&#39;</span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h4 id=建库建表数据定义>建库建表，数据定义</h4><p>首先建库建表。编写 SQL 语句如下：
+（题目中未指定主键，不创建 pk）</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-SQL data-lang=SQL><span class=line><span class=cl><span class=c1>-- 创建以学号姓名命名的数据库
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>CREATE</span><span class=w> </span><span class=k>DATABASE</span><span class=w> </span><span class=n>xxxx</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=n>USE</span><span class=w> </span><span class=n>xxxx</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- 创建Product表
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>Product</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>maker</span><span class=w> </span><span class=nb>CHAR</span><span class=p>(</span><span class=mi>1</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>model</span><span class=w> </span><span class=nb>INT</span><span class=p>(</span><span class=mi>4</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>type</span><span class=w> </span><span class=n>ENUM</span><span class=p>(</span><span class=s1>&#39;laptop&#39;</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;printer&#39;</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- 创建PC表
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>PC</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>model</span><span class=w> </span><span class=nb>INT</span><span class=p>(</span><span class=mi>4</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>speed</span><span class=w> </span><span class=nb>DECIMAL</span><span class=p>(</span><span class=mi>4</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ram</span><span class=w> </span><span class=nb>INT</span><span class=p>(</span><span class=mi>4</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>hd</span><span class=w> </span><span class=nb>INT</span><span class=p>(</span><span class=mi>3</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>price</span><span class=w> </span><span class=nb>INT</span><span class=p>(</span><span class=mi>4</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- 创建Laptop表
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>Laptop</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>model</span><span class=w> </span><span class=nb>INT</span><span class=p>(</span><span class=mi>4</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>speed</span><span class=w> </span><span class=nb>DECIMAL</span><span class=p>(</span><span class=mi>4</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ram</span><span class=w> </span><span class=nb>INT</span><span class=p>(</span><span class=mi>4</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>hd</span><span class=w> </span><span class=nb>INT</span><span class=p>(</span><span class=mi>3</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>screen</span><span class=w> </span><span class=nb>DECIMAL</span><span class=p>(</span><span class=mi>3</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>price</span><span class=w> </span><span class=nb>INT</span><span class=p>(</span><span class=mi>4</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- 创建Printer表
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>Printer</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>model</span><span class=w> </span><span class=nb>INT</span><span class=p>(</span><span class=mi>4</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>color</span><span class=w> </span><span class=nb>BOOLEAN</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>type</span><span class=w> </span><span class=n>ENUM</span><span class=p>(</span><span class=s1>&#39;ink-jet&#39;</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laser&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>price</span><span class=w> </span><span class=nb>INT</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p>执行建库建表：
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404161859.png loading=lazy></p><h4 id=插入数据>插入数据</h4><p>编写 SQL 语句用于插入数据。题目里的数据太多，对每个表都先插入前 15 条。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>INSERT</span><span class=w> </span><span class=k>INTO</span><span class=w> </span><span class=n>Product</span><span class=w> </span><span class=p>(</span><span class=n>maker</span><span class=p>,</span><span class=w> </span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=k>type</span><span class=p>)</span><span class=w> </span><span class=k>VALUES</span><span class=w> 
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1001</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1002</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1003</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2004</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2005</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2006</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;B&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1004</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;B&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1005</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;B&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1006</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;B&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2007</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;C&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1007</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;D&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1008</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;D&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1009</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;D&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1010</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;D&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>3004</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;printer&#39;</span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240404162514.png loading=lazy></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>INSERT</span><span class=w> </span><span class=k>INTO</span><span class=w> </span><span class=n>PC</span><span class=w> </span><span class=p>(</span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=n>speed</span><span class=p>,</span><span class=w> </span><span class=n>ram</span><span class=p>,</span><span class=w> </span><span class=n>hd</span><span class=p>,</span><span class=w> </span><span class=n>price</span><span class=p>)</span><span class=w> </span><span class=k>VALUES</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1001</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>66</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>250</span><span class=p>,</span><span class=w> </span><span class=mi>2114</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1002</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>10</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>250</span><span class=p>,</span><span class=w> </span><span class=mi>996</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1003</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>42</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>478</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1004</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>250</span><span class=p>,</span><span class=w> </span><span class=mi>649</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1005</span><span class=p>,</span><span class=w> </span><span class=mi>3</span><span class=p>.</span><span class=mi>20</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>250</span><span class=p>,</span><span class=w> </span><span class=mi>630</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1006</span><span class=p>,</span><span class=w> </span><span class=mi>3</span><span class=p>.</span><span class=mi>20</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>320</span><span class=p>,</span><span class=w> </span><span class=mi>1049</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1007</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>20</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>200</span><span class=p>,</span><span class=w> </span><span class=mi>510</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1008</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>20</span><span class=p>,</span><span class=w> </span><span class=mi>2048</span><span class=p>,</span><span class=w> </span><span class=mi>250</span><span class=p>,</span><span class=w> </span><span class=mi>770</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1009</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>00</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>250</span><span class=p>,</span><span class=w> </span><span class=mi>650</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1010</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>2048</span><span class=p>,</span><span class=w> </span><span class=mi>300</span><span class=p>,</span><span class=w> </span><span class=mi>770</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1011</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>86</span><span class=p>,</span><span class=w> </span><span class=mi>2048</span><span class=p>,</span><span class=w> </span><span class=mi>160</span><span class=p>,</span><span class=w> </span><span class=mi>959</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1012</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>160</span><span class=p>,</span><span class=w> </span><span class=mi>649</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1013</span><span class=p>,</span><span class=w> </span><span class=mi>3</span><span class=p>.</span><span class=mi>06</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>529</span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240404163135.png loading=lazy></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>INSERT</span><span class=w> </span><span class=k>INTO</span><span class=w> </span><span class=n>Laptop</span><span class=w> </span><span class=p>(</span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=n>speed</span><span class=p>,</span><span class=w> </span><span class=n>ram</span><span class=p>,</span><span class=w> </span><span class=n>hd</span><span class=p>,</span><span class=w> </span><span class=n>screen</span><span class=p>,</span><span class=w> </span><span class=n>price</span><span class=p>)</span><span class=w> </span><span class=k>VALUES</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2001</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>00</span><span class=p>,</span><span class=w> </span><span class=mi>2048</span><span class=p>,</span><span class=w> </span><span class=mi>240</span><span class=p>,</span><span class=w> </span><span class=mi>20</span><span class=p>.</span><span class=mi>1</span><span class=p>,</span><span class=w> </span><span class=mi>3673</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2002</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>73</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>17</span><span class=p>.</span><span class=mi>0</span><span class=p>,</span><span class=w> </span><span class=mi>949</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2003</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>60</span><span class=p>,</span><span class=w> </span><span class=mi>15</span><span class=p>.</span><span class=mi>4</span><span class=p>,</span><span class=w> </span><span class=mi>549</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2004</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>00</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>60</span><span class=p>,</span><span class=w> </span><span class=mi>13</span><span class=p>.</span><span class=mi>3</span><span class=p>,</span><span class=w> </span><span class=mi>1150</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2005</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>16</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>120</span><span class=p>,</span><span class=w> </span><span class=mi>17</span><span class=p>.</span><span class=mi>0</span><span class=p>,</span><span class=w> </span><span class=mi>2500</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2006</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>00</span><span class=p>,</span><span class=w> </span><span class=mi>2048</span><span class=p>,</span><span class=w> </span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>15</span><span class=p>.</span><span class=mi>4</span><span class=p>,</span><span class=w> </span><span class=mi>1700</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2007</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>83</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>120</span><span class=p>,</span><span class=w> </span><span class=mi>13</span><span class=p>.</span><span class=mi>3</span><span class=p>,</span><span class=w> </span><span class=mi>1429</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2008</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>60</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>100</span><span class=p>,</span><span class=w> </span><span class=mi>15</span><span class=p>.</span><span class=mi>4</span><span class=p>,</span><span class=w> </span><span class=mi>900</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2009</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>60</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>14</span><span class=p>.</span><span class=mi>1</span><span class=p>,</span><span class=w> </span><span class=mi>680</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2010</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>00</span><span class=p>,</span><span class=w> </span><span class=mi>2048</span><span class=p>,</span><span class=w> </span><span class=mi>160</span><span class=p>,</span><span class=w> </span><span class=mi>15</span><span class=p>.</span><span class=mi>4</span><span class=p>,</span><span class=w> </span><span class=mi>2300</span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240404163713.png loading=lazy></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>INSERT</span><span class=w> </span><span class=k>INTO</span><span class=w> </span><span class=n>Printer</span><span class=w> </span><span class=p>(</span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=n>color</span><span class=p>,</span><span class=w> </span><span class=k>type</span><span class=p>,</span><span class=w> </span><span class=n>price</span><span class=p>)</span><span class=w> </span><span class=k>VALUES</span><span class=w> 
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3001</span><span class=p>,</span><span class=w> </span><span class=k>true</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;ink-jet&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>99</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3002</span><span class=p>,</span><span class=w> </span><span class=k>false</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laser&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>239</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3003</span><span class=p>,</span><span class=w> </span><span class=k>true</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laser&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>899</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3004</span><span class=p>,</span><span class=w> </span><span class=k>true</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;ink-jet&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>120</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3005</span><span class=p>,</span><span class=w> </span><span class=k>false</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laser&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>120</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3006</span><span class=p>,</span><span class=w> </span><span class=k>true</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;ink-jet&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>100</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3007</span><span class=p>,</span><span class=w> </span><span class=k>true</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laser&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>200</span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240404163938.png loading=lazy></p><h3 id=实验-2-2-使用-navicat-查看数据库>实验 2-2 使用 Navicat 查看数据库</h3><p>连接到数据库：
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404164649.png loading=lazy>
+查看数据库中的表：
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404164728.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404164744.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404164800.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404164815.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240404164828.png loading=lazy>
+可以看到数据已经成功插入。</p><h1 id=实验报告三>实验报告三</h1><h2 id=实验设计背景>实验设计背景</h2><p>北邮人论坛是北京邮电大学的校园论坛，成立于 2003 年 9 月 26 日 ，由 seasir 和 chit 担任创始站长 ，并由北邮人团队负责维护和运营，是北邮学生、校友和教职工交流信息、分享经验、讨论问题的核心平台。现已经成为北邮校内最大的信息交流平台 ，在北邮及周边学校中拥有较为固定的使用人群，在高校论坛里十分火爆，人气颇高。论坛不仅是一个信息交流的平台，也是北邮人社交和文化生活的重要组成部分。</p><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240530150236.png loading=lazy alt=北邮人论坛></p><p>实验仿照北邮人论坛，设计一个简易版本的论坛雏形，用于完成基本的论坛职能。</p><h2 id=数据关系设计>数据关系设计</h2><p>从<strong>整体上</strong>来看，此业务可大致拆分为如下交互实体：</p><ul><li><strong>用户</strong>，有如下属性：是否为管理员，真实姓名，论坛昵称，学号，用户名，密码，发过什么帖子，发过什么回复，注册时间。</li><li><strong>版块</strong>，有如下属性：版块名称，版块简介，版块管理员，版块下有帖子，一个帖子只能在一个版块下。一个版块可以有多个管理员，一个管理员也可以是多个版块的管理。</li><li><strong>帖子</strong>，有如下属性：帖子标题，帖子正文，楼主，帖子有什么回复。</li><li><strong>回复</strong>，有如下属性：回复发送者，回复的是什么帖子，回复内容。</li></ul><p>当然北邮人论坛还有很多功能如点赞、首页推荐等，本次实验设计<strong>不涉及</strong>，只做一个最简化版本的实现。我们结合实际业务需求，可以设计出如下表关系：</p><p><strong>用户（Users）</strong></p><ul><li>属性：<ul><li><code>UserID</code>：用户唯一标识符，主键，自增。</li><li><code>IsAdmin</code>：布尔值，表示用户是否为管理员。</li><li><code>RealName</code>：用户的真实姓名。</li><li><code>Nickname</code>：用户在论坛上的昵称。</li><li><code>StudentNumber</code>：用户的学号，唯一。</li><li><code>Username</code>：用户的用户名，唯一。</li><li><code>Password</code>：用户的密码。</li><li><code>RegisterTime</code>：用户的注册时间。</li></ul></li><li>关系：<ul><li>一个用户可以发多个帖子（Posts 表中 <code>AuthorID</code> 外键）。</li><li>一个用户可以发多个回复（Replies 表中 <code>AuthorID</code> 外键）。</li></ul></li></ul><p><strong>版块（Forums）</strong></p><ul><li>属性：<ul><li><code>ForumID</code>：版块唯一标识符，主键，自增。</li><li><code>ForumName</code>：版块名称。</li><li><code>ForumDescription</code>：版块简介。</li><li><code>ForumAdminID</code>：版块的管理员（可以在 <code>ForumAdmins</code> 表中定义多个管理员）。</li></ul></li><li>关系：<ul><li>一个版块可以包含多个帖子（Posts 表中 <code>ForumID</code> 外键）。</li><li>一个版块可以由多个管理员管理（通过 <code>ForumAdmins</code> 表实现多对多关系）。</li></ul></li></ul><p><strong>版块管理员（ForumAdmins）</strong></p><ul><li>属性：<ul><li><code>ForumAdminID</code>：版块管理员关系的唯一标识符，主键，自增。</li><li><code>UserID</code>：用户唯一标识符，外键，引用 <code>Users</code> 表中的 <code>UserID</code>。</li><li><code>ForumID</code>：版块唯一标识符，外键，引用 <code>Forums</code> 表中的 <code>ForumID</code>。</li></ul></li><li>关系：<ul><li>一个管理员可以管理多个版块。</li><li>一个版块可以有多个管理员。</li></ul></li></ul><p><strong>帖子（Posts）</strong></p><ul><li>属性：<ul><li><code>PostID</code>：帖子唯一标识符，主键，自增。</li><li><code>Title</code>：帖子标题。</li><li><code>Content</code>：帖子正文。</li><li><code>AuthorID</code>：发帖人，外键，引用 <code>Users</code> 表中的 <code>UserID</code>。</li><li><code>ForumID</code>：所属版块，外键，引用 <code>Forums</code> 表中的 <code>ForumID</code>。</li><li><code>PostTime</code>：发帖时间。</li></ul></li><li>关系：<ul><li>一个帖子只能在一个版块下（通过 <code>ForumID</code> 外键）。</li><li>一个帖子可以有多个回复（Replies 表中 <code>PostID</code> 外键）。</li></ul></li></ul><p><strong>回复（Replies）</strong></p><ul><li>属性：<ul><li><code>ReplyID</code>：回复唯一标识符，主键，自增。</li><li><code>Content</code>：回复内容。</li><li><code>AuthorID</code>：回复发送者，外键，引用 <code>Users</code> 表中的 <code>UserID</code>。</li><li><code>PostID</code>：回复的帖子，外键，引用 <code>Posts</code> 表中的 <code>PostID</code>。</li><li><code>ReplyTime</code>：回复时间。</li></ul></li><li>关系：<ul><li>一个回复只能对应一个帖子（通过 <code>PostID</code> 外键）。</li><li>一个回复由一个用户发送（通过 <code>AuthorID</code> 外键）。</li></ul></li></ul><h3 id=补充说明>补充说明</h3><ul><li>每个用户都有唯一的 <code>UserID</code>，<code>StudentNumber</code>，和 <code>Username</code>。</li><li>每个版块都有唯一的 <code>ForumID</code>。</li><li>每个帖子都有唯一的 <code>PostID</code>。</li><li>每个回复都有唯一的 <code>ReplyID</code>。</li><li>每个版块可以有多个管理员，通过中间表 <code>ForumAdmins</code> 实现。</li><li>每个管理员可以管理多个版块，同样通过 <code>ForumAdmins</code> 表实现。</li></ul><h3 id=er-图>ER 图</h3><p>此业务的 ER 图描述如下：</p><p><img src=/blog/mermaid-diagram-2024-05-30-150852.svg loading=lazy></p><h2 id=建表-sql-语句>建表 SQL 语句</h2><p>我们结合数据设计和各字段属性的域、存储长度等，可写出如下 SQL 建表语句：</p><h3 id=建表设计>建表设计</h3><h4 id=用户表users>用户表（Users）</h4><p>此表存储论坛用户的信息。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>Users</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>UserID</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>PRIMARY</span><span class=w> </span><span class=k>KEY</span><span class=w> </span><span class=n>AUTO_INCREMENT</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>IsAdmin</span><span class=w> </span><span class=nb>BOOLEAN</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>RealName</span><span class=w> </span><span class=nb>VARCHAR</span><span class=p>(</span><span class=mi>100</span><span class=p>)</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Nickname</span><span class=w> </span><span class=nb>VARCHAR</span><span class=p>(</span><span class=mi>100</span><span class=p>)</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>StudentNumber</span><span class=w> </span><span class=nb>VARCHAR</span><span class=p>(</span><span class=mi>50</span><span class=p>)</span><span class=w> </span><span class=k>UNIQUE</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Username</span><span class=w> </span><span class=nb>VARCHAR</span><span class=p>(</span><span class=mi>50</span><span class=p>)</span><span class=w> </span><span class=k>UNIQUE</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Password</span><span class=w> </span><span class=nb>VARCHAR</span><span class=p>(</span><span class=mi>255</span><span class=p>)</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>RegisterTime</span><span class=w> </span><span class=n>DATETIME</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h4 id=版块表forums>版块表（Forums）</h4><p>此表存储论坛的版块信息。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>Forums</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ForumID</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>PRIMARY</span><span class=w> </span><span class=k>KEY</span><span class=w> </span><span class=n>AUTO_INCREMENT</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ForumName</span><span class=w> </span><span class=nb>VARCHAR</span><span class=p>(</span><span class=mi>100</span><span class=p>)</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ForumDescription</span><span class=w> </span><span class=nb>TEXT</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ForumAdminID</span><span class=w> </span><span class=nb>INT</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>FOREIGN</span><span class=w> </span><span class=k>KEY</span><span class=w> </span><span class=p>(</span><span class=n>ForumAdminID</span><span class=p>)</span><span class=w> </span><span class=k>REFERENCES</span><span class=w> </span><span class=n>Users</span><span class=p>(</span><span class=n>UserID</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h4 id=版块管理员表forumadmins>版块管理员表（ForumAdmins）</h4><p>此表存储版块的管理员信息，一个版块可以有多个管理员，一个管理员也可以管理多个版块。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>ForumAdmins</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ForumAdminID</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=n>AUTO_INCREMENT</span><span class=w> </span><span class=k>PRIMARY</span><span class=w> </span><span class=k>KEY</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>UserID</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ForumID</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>FOREIGN</span><span class=w> </span><span class=k>KEY</span><span class=w> </span><span class=p>(</span><span class=n>UserID</span><span class=p>)</span><span class=w> </span><span class=k>REFERENCES</span><span class=w> </span><span class=n>Users</span><span class=p>(</span><span class=n>UserID</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>FOREIGN</span><span class=w> </span><span class=k>KEY</span><span class=w> </span><span class=p>(</span><span class=n>ForumID</span><span class=p>)</span><span class=w> </span><span class=k>REFERENCES</span><span class=w> </span><span class=n>Forums</span><span class=p>(</span><span class=n>ForumID</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h4 id=帖子表posts>帖子表（Posts）</h4><p>此表存储论坛的帖子信息。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>Posts</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>PostID</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>PRIMARY</span><span class=w> </span><span class=k>KEY</span><span class=w> </span><span class=n>AUTO_INCREMENT</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Title</span><span class=w> </span><span class=nb>VARCHAR</span><span class=p>(</span><span class=mi>200</span><span class=p>)</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Content</span><span class=w> </span><span class=nb>TEXT</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>AuthorID</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ForumID</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>PostTime</span><span class=w> </span><span class=n>DATETIME</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>FOREIGN</span><span class=w> </span><span class=k>KEY</span><span class=w> </span><span class=p>(</span><span class=n>AuthorID</span><span class=p>)</span><span class=w> </span><span class=k>REFERENCES</span><span class=w> </span><span class=n>Users</span><span class=p>(</span><span class=n>UserID</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>FOREIGN</span><span class=w> </span><span class=k>KEY</span><span class=w> </span><span class=p>(</span><span class=n>ForumID</span><span class=p>)</span><span class=w> </span><span class=k>REFERENCES</span><span class=w> </span><span class=n>Forums</span><span class=p>(</span><span class=n>ForumID</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h4 id=回复表replies>回复表（Replies）</h4><p>此表存储对帖子回复的信息。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>Replies</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ReplyID</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>PRIMARY</span><span class=w> </span><span class=k>KEY</span><span class=w> </span><span class=n>AUTO_INCREMENT</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Content</span><span class=w> </span><span class=nb>TEXT</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>AuthorID</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>PostID</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ReplyTime</span><span class=w> </span><span class=n>DATETIME</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>NULL</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>FOREIGN</span><span class=w> </span><span class=k>KEY</span><span class=w> </span><span class=p>(</span><span class=n>AuthorID</span><span class=p>)</span><span class=w> </span><span class=k>REFERENCES</span><span class=w> </span><span class=n>Users</span><span class=p>(</span><span class=n>UserID</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>FOREIGN</span><span class=w> </span><span class=k>KEY</span><span class=w> </span><span class=p>(</span><span class=n>PostID</span><span class=p>)</span><span class=w> </span><span class=k>REFERENCES</span><span class=w> </span><span class=n>Posts</span><span class=p>(</span><span class=n>PostID</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h2 id=实践建库--建表>实践建库 & 建表</h2><p>创建一个叫数据库课设论坛的数据库，用来做这次上机作业。</p><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240530151430.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240530151658.png loading=lazy>
+开始建表
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240530151720.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240530151744.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240530151806.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240530151828.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240530151851.png loading=lazy>
+建表完成。
+用 Navicat 可视化看一下表结构：
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240530152006.png loading=lazy>
+建表成功，实验完成。</p><h1 id=实验报告四>实验报告四</h1><h2 id=准备实验环境建库建表录入数据>准备实验环境（建库建表，录入数据）</h2><p>实验一没把数据录完，这里重新录入。</p><p>实验使用的数据来自习题 2.4.1。其数据模式如下：</p><p>Product(maker,model,type)<br>PC(model,speed,ram,hd,price)<br>Laptop(model,speed,ram,hd,screen,price)<br>Printer(model,color,type,price)</p><p>将题目数值录入电子化表格如下：
+（电子表格忽略了浮点数值的小数点后的尾部 0，通过 SQL 录入时不受此处影响）</p><div class=table-wrapper><table><thead><tr><th>maker</th><th>model</th><th>type</th></tr></thead><tbody><tr><td>A</td><td>1001</td><td>pc</td></tr><tr><td>A</td><td>1002</td><td>pc</td></tr><tr><td>A</td><td>1003</td><td>pc</td></tr><tr><td>A</td><td>2004</td><td>laptop</td></tr><tr><td>A</td><td>2005</td><td>laptop</td></tr><tr><td>A</td><td>2006</td><td>laptop</td></tr><tr><td>B</td><td>1004</td><td>pc</td></tr><tr><td>B</td><td>1005</td><td>pc</td></tr><tr><td>B</td><td>1006</td><td>pc</td></tr><tr><td>B</td><td>2007</td><td>laptop</td></tr><tr><td>C</td><td>1007</td><td>pc</td></tr><tr><td>D</td><td>1008</td><td>pc</td></tr><tr><td>D</td><td>1009</td><td>pc</td></tr><tr><td>D</td><td>1010</td><td>pc</td></tr><tr><td>D</td><td>3004</td><td>printer</td></tr><tr><td>D</td><td>3005</td><td>printer</td></tr><tr><td>E</td><td>1011</td><td>pc</td></tr><tr><td>E</td><td>1012</td><td>pc</td></tr><tr><td>E</td><td>1013</td><td>pc</td></tr><tr><td>E</td><td>2001</td><td>laptop</td></tr><tr><td>E</td><td>2002</td><td>laptop</td></tr><tr><td>E</td><td>2003</td><td>laptop</td></tr><tr><td>E</td><td>3001</td><td>printer</td></tr><tr><td>E</td><td>3002</td><td>printer</td></tr><tr><td>E</td><td>3003</td><td>printer</td></tr><tr><td>F</td><td>2008</td><td>laptop</td></tr><tr><td>F</td><td>2009</td><td>laptop</td></tr><tr><td>G</td><td>2010</td><td>laptop</td></tr><tr><td>H</td><td>3006</td><td>printer</td></tr><tr><td>H</td><td>3007</td><td>printer</td></tr></tbody></table></div><div class=table-wrapper><table><thead><tr><th>model</th><th>speed</th><th>ram</th><th>hd</th><th>price</th></tr></thead><tbody><tr><td>1001</td><td>2.66</td><td>1024</td><td>250</td><td>2114</td></tr><tr><td>1002</td><td>2.1</td><td>512</td><td>250</td><td>995</td></tr><tr><td>1003</td><td>1.42</td><td>512</td><td>80</td><td>478</td></tr><tr><td>1004</td><td>2.8</td><td>1024</td><td>250</td><td>649</td></tr><tr><td>1005</td><td>3.2</td><td>512</td><td>250</td><td>630</td></tr><tr><td>1006</td><td>3.2</td><td>1024</td><td>32</td><td>1049</td></tr><tr><td>1007</td><td>2.2</td><td>1024</td><td>200</td><td>510</td></tr><tr><td>1008</td><td>2.2</td><td>2048</td><td>250</td><td>770</td></tr><tr><td>1009</td><td>2</td><td>1024</td><td>250</td><td>650</td></tr><tr><td>1010</td><td>2.8</td><td>2048</td><td>300</td><td>770</td></tr><tr><td>1011</td><td>1.86</td><td>2048</td><td>160</td><td>959</td></tr><tr><td>1012</td><td>2.8</td><td>1024</td><td>160</td><td>649</td></tr><tr><td>1013</td><td>3.06</td><td>512</td><td>80</td><td>529</td></tr></tbody></table></div><div class=table-wrapper><table><thead><tr><th>model</th><th>speed</th><th>ram</th><th>hd</th><th>screen</th><th>price</th></tr></thead><tbody><tr><td>2001</td><td>2</td><td>2048</td><td>240</td><td>20.1</td><td>3673</td></tr><tr><td>2002</td><td>1.73</td><td>1024</td><td>80</td><td>17</td><td>949</td></tr><tr><td>2003</td><td>1.8</td><td>512</td><td>60</td><td>15.4</td><td>549</td></tr><tr><td>2004</td><td>2</td><td>512</td><td>60</td><td>13.3</td><td>1150</td></tr><tr><td>2005</td><td>2.16</td><td>1024</td><td>120</td><td>17</td><td>2500</td></tr><tr><td>2006</td><td>2</td><td>2048</td><td>80</td><td>15.4</td><td>1700</td></tr><tr><td>2007</td><td>1.83</td><td>1024</td><td>120</td><td>13.3</td><td>1429</td></tr><tr><td>2008</td><td>1.6</td><td>1024</td><td>100</td><td>15.4</td><td>900</td></tr><tr><td>2009</td><td>1.6</td><td>512</td><td>80</td><td>14.1</td><td>680</td></tr><tr><td>2010</td><td>2</td><td>2048</td><td>160</td><td>15.4</td><td>2300</td></tr></tbody></table></div><div class=table-wrapper><table><thead><tr><th>model</th><th>color</th><th>type</th><th>price</th></tr></thead><tbody><tr><td>3001</td><td>TRUE</td><td>int-jet</td><td>99</td></tr><tr><td>3002</td><td>FALSE</td><td>laser</td><td>239</td></tr><tr><td>3003</td><td>TRUE</td><td>laser</td><td>899</td></tr><tr><td>3004</td><td>TRUE</td><td>int-jet</td><td>120</td></tr><tr><td>3005</td><td>FALSE</td><td>laser</td><td>120</td></tr><tr><td>3006</td><td>TRUE</td><td>int-jet</td><td>100</td></tr><tr><td>3007</td><td>TRUE</td><td>laser</td><td>200</td></tr></tbody></table></div><p>编写 SQL 语句如下：</p><p>注意：设计时，将 price 项的 Domain 视作两位小数的浮点数，因为理论上钱可以精确到人民币分/美分等，不能排除后续插入的产品的价格不是浮点数。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=c1>-- 创建数据库
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>CREATE</span><span class=w> </span><span class=k>DATABASE</span><span class=w> </span><span class=k>IF</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>EXISTS</span><span class=w> </span><span class=n>DatabaseLabFour</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=n>USE</span><span class=w> </span><span class=n>DatabaseLabFour</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- 创建表Product
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>Product</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>maker</span><span class=w> </span><span class=nb>VARCHAR</span><span class=p>(</span><span class=mi>255</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>model</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>PRIMARY</span><span class=w> </span><span class=k>KEY</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>type</span><span class=w> </span><span class=nb>VARCHAR</span><span class=p>(</span><span class=mi>255</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- 插入数据到Product表
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>INSERT</span><span class=w> </span><span class=k>INTO</span><span class=w> </span><span class=n>Product</span><span class=w> </span><span class=p>(</span><span class=n>maker</span><span class=p>,</span><span class=w> </span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=k>type</span><span class=p>)</span><span class=w> </span><span class=k>VALUES</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1001</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1002</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1003</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2004</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2005</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2006</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;B&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1004</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;B&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1005</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;B&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1006</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;B&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2007</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;C&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1007</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;D&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1008</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;D&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1009</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;D&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1010</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;D&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>3004</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;printer&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;D&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>3005</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;printer&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;E&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1011</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;E&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1012</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;E&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>1013</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;E&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2001</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;E&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2002</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;E&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2003</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;E&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>3001</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;printer&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;E&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>3002</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;printer&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;E&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>3003</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;printer&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;F&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2008</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;F&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2009</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;G&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>2010</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;H&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>3006</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;printer&#39;</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=s1>&#39;H&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>3007</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;printer&#39;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- 创建表PC
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>PC</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>model</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>PRIMARY</span><span class=w> </span><span class=k>KEY</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>speed</span><span class=w> </span><span class=nb>DECIMAL</span><span class=p>(</span><span class=mi>4</span><span class=p>,</span><span class=mi>2</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ram</span><span class=w> </span><span class=nb>INT</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>hd</span><span class=w> </span><span class=nb>INT</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>price</span><span class=w> </span><span class=nb>DECIMAL</span><span class=p>(</span><span class=mi>10</span><span class=p>,</span><span class=mi>2</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- 插入数据到 PC 表
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>INSERT</span><span class=w> </span><span class=k>INTO</span><span class=w> </span><span class=n>PC</span><span class=w> </span><span class=p>(</span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=n>speed</span><span class=p>,</span><span class=w> </span><span class=n>ram</span><span class=p>,</span><span class=w> </span><span class=n>hd</span><span class=p>,</span><span class=w> </span><span class=n>price</span><span class=p>)</span><span class=w> </span><span class=k>VALUES</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1001</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>66</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>250</span><span class=p>,</span><span class=w> </span><span class=mi>2114</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1002</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>1</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>250</span><span class=p>,</span><span class=w> </span><span class=mi>995</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1003</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>42</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>478</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1004</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>8</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>250</span><span class=p>,</span><span class=w> </span><span class=mi>649</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1005</span><span class=p>,</span><span class=w> </span><span class=mi>3</span><span class=p>.</span><span class=mi>2</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>250</span><span class=p>,</span><span class=w> </span><span class=mi>630</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1006</span><span class=p>,</span><span class=w> </span><span class=mi>3</span><span class=p>.</span><span class=mi>2</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>32</span><span class=p>,</span><span class=w> </span><span class=mi>1049</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1007</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>2</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>200</span><span class=p>,</span><span class=w> </span><span class=mi>510</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1008</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>2</span><span class=p>,</span><span class=w> </span><span class=mi>2048</span><span class=p>,</span><span class=w> </span><span class=mi>250</span><span class=p>,</span><span class=w> </span><span class=mi>770</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1009</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>0</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>250</span><span class=p>,</span><span class=w> </span><span class=mi>650</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1010</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>8</span><span class=p>,</span><span class=w> </span><span class=mi>2048</span><span class=p>,</span><span class=w> </span><span class=mi>300</span><span class=p>,</span><span class=w> </span><span class=mi>770</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1011</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>86</span><span class=p>,</span><span class=w> </span><span class=mi>2048</span><span class=p>,</span><span class=w> </span><span class=mi>160</span><span class=p>,</span><span class=w> </span><span class=mi>959</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1012</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>8</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>160</span><span class=p>,</span><span class=w> </span><span class=mi>649</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>1013</span><span class=p>,</span><span class=w> </span><span class=mi>3</span><span class=p>.</span><span class=mi>06</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>529</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- 创建表Laptop
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>Laptop</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>model</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>PRIMARY</span><span class=w> </span><span class=k>KEY</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>speed</span><span class=w> </span><span class=nb>DECIMAL</span><span class=p>(</span><span class=mi>3</span><span class=p>,</span><span class=mi>2</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>ram</span><span class=w> </span><span class=nb>INT</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>hd</span><span class=w> </span><span class=nb>INT</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>screen</span><span class=w> </span><span class=nb>DECIMAL</span><span class=p>(</span><span class=mi>4</span><span class=p>,</span><span class=mi>1</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>price</span><span class=w> </span><span class=nb>DECIMAL</span><span class=p>(</span><span class=mi>10</span><span class=p>,</span><span class=mi>2</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- 插入数据到Laptop表
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>INSERT</span><span class=w> </span><span class=k>INTO</span><span class=w> </span><span class=n>Laptop</span><span class=w> </span><span class=p>(</span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=n>speed</span><span class=p>,</span><span class=w> </span><span class=n>ram</span><span class=p>,</span><span class=w> </span><span class=n>hd</span><span class=p>,</span><span class=w> </span><span class=n>screen</span><span class=p>,</span><span class=w> </span><span class=n>price</span><span class=p>)</span><span class=w> </span><span class=k>VALUES</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2001</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>00</span><span class=p>,</span><span class=w> </span><span class=mi>2048</span><span class=p>,</span><span class=w> </span><span class=mi>240</span><span class=p>,</span><span class=w> </span><span class=mi>20</span><span class=p>.</span><span class=mi>1</span><span class=p>,</span><span class=w> </span><span class=mi>3673</span><span class=p>.</span><span class=mi>00</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2002</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>73</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>17</span><span class=p>.</span><span class=mi>0</span><span class=p>,</span><span class=w> </span><span class=mi>949</span><span class=p>.</span><span class=mi>00</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2003</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>60</span><span class=p>,</span><span class=w> </span><span class=mi>15</span><span class=p>.</span><span class=mi>4</span><span class=p>,</span><span class=w> </span><span class=mi>549</span><span class=p>.</span><span class=mi>00</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2004</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>00</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>60</span><span class=p>,</span><span class=w> </span><span class=mi>13</span><span class=p>.</span><span class=mi>3</span><span class=p>,</span><span class=w> </span><span class=mi>1150</span><span class=p>.</span><span class=mi>00</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2005</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>16</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>120</span><span class=p>,</span><span class=w> </span><span class=mi>17</span><span class=p>.</span><span class=mi>0</span><span class=p>,</span><span class=w> </span><span class=mi>2500</span><span class=p>.</span><span class=mi>00</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2006</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>00</span><span class=p>,</span><span class=w> </span><span class=mi>2048</span><span class=p>,</span><span class=w> </span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>15</span><span class=p>.</span><span class=mi>4</span><span class=p>,</span><span class=w> </span><span class=mi>1700</span><span class=p>.</span><span class=mi>00</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2007</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>83</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>120</span><span class=p>,</span><span class=w> </span><span class=mi>13</span><span class=p>.</span><span class=mi>3</span><span class=p>,</span><span class=w> </span><span class=mi>1429</span><span class=p>.</span><span class=mi>00</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2008</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>60</span><span class=p>,</span><span class=w> </span><span class=mi>1024</span><span class=p>,</span><span class=w> </span><span class=mi>100</span><span class=p>,</span><span class=w> </span><span class=mi>15</span><span class=p>.</span><span class=mi>4</span><span class=p>,</span><span class=w> </span><span class=mi>900</span><span class=p>.</span><span class=mi>00</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2009</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=p>.</span><span class=mi>60</span><span class=p>,</span><span class=w> </span><span class=mi>512</span><span class=p>,</span><span class=w> </span><span class=mi>80</span><span class=p>,</span><span class=w> </span><span class=mi>14</span><span class=p>.</span><span class=mi>1</span><span class=p>,</span><span class=w> </span><span class=mi>680</span><span class=p>.</span><span class=mi>00</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>2010</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>.</span><span class=mi>00</span><span class=p>,</span><span class=w> </span><span class=mi>2048</span><span class=p>,</span><span class=w> </span><span class=mi>160</span><span class=p>,</span><span class=w> </span><span class=mi>15</span><span class=p>.</span><span class=mi>4</span><span class=p>,</span><span class=w> </span><span class=mi>2300</span><span class=p>.</span><span class=mi>00</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- 创建表 Printer
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>CREATE</span><span class=w> </span><span class=k>TABLE</span><span class=w> </span><span class=n>Printer</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>model</span><span class=w> </span><span class=nb>INT</span><span class=w> </span><span class=k>PRIMARY</span><span class=w> </span><span class=k>KEY</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>color</span><span class=w> </span><span class=nb>BOOLEAN</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>type</span><span class=w> </span><span class=nb>VARCHAR</span><span class=p>(</span><span class=mi>50</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>price</span><span class=w> </span><span class=nb>DECIMAL</span><span class=p>(</span><span class=mi>10</span><span class=p>,</span><span class=w> </span><span class=mi>2</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- 插入数据到 Printer 表
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>INSERT</span><span class=w> </span><span class=k>INTO</span><span class=w> </span><span class=n>Printer</span><span class=w> </span><span class=p>(</span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=n>color</span><span class=p>,</span><span class=w> </span><span class=k>type</span><span class=p>,</span><span class=w> </span><span class=n>price</span><span class=p>)</span><span class=w> </span><span class=k>VALUES</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3001</span><span class=p>,</span><span class=w> </span><span class=k>TRUE</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;int-jet&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>99</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3002</span><span class=p>,</span><span class=w> </span><span class=k>FALSE</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laser&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>239</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3003</span><span class=p>,</span><span class=w> </span><span class=k>TRUE</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laser&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>899</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3004</span><span class=p>,</span><span class=w> </span><span class=k>TRUE</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;int-jet&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>120</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3005</span><span class=p>,</span><span class=w> </span><span class=k>FALSE</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laser&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>120</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3006</span><span class=p>,</span><span class=w> </span><span class=k>TRUE</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;int-jet&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>100</span><span class=p>),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>(</span><span class=mi>3007</span><span class=p>,</span><span class=w> </span><span class=k>TRUE</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;laser&#39;</span><span class=p>,</span><span class=w> </span><span class=mi>200</span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p>执行建库建表和数据插入：
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240604144008.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240604144340.png loading=lazy>
+数据插入成功。</p><h2 id=习题-622-查询查询结果>习题 6.2.2 查询&查询结果</h2><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604161843.png loading=lazy></p><p>我们编写 SQL 语句如下。查询结果截图下附。</p><h3 id=a-查询硬盘容量至少-30g-的笔记本电脑制造商及该电脑的速度>a) 查询硬盘容量至少 30G 的笔记本电脑制造商及该电脑的速度</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=n>Product</span><span class=p>.</span><span class=n>maker</span><span class=p>,</span><span class=w> </span><span class=n>Laptop</span><span class=p>.</span><span class=n>speed</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>Product</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>JOIN</span><span class=w> </span><span class=n>Laptop</span><span class=w> </span><span class=k>ON</span><span class=w> </span><span class=n>Product</span><span class=p>.</span><span class=n>model</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>Laptop</span><span class=p>.</span><span class=n>model</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>WHERE</span><span class=w> </span><span class=n>Laptop</span><span class=p>.</span><span class=n>hd</span><span class=w> </span><span class=o>&gt;=</span><span class=w> </span><span class=mi>30</span><span class=p>;</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604162533.png loading=lazy></p><h3 id=b-查询制造商-b-生产的任意类型的所有产品的型号和价格>b) 查询制造商 B 生产的任意类型的所有产品的型号和价格</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=n>Product</span><span class=p>.</span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=n>PC</span><span class=p>.</span><span class=n>price</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>Product</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>JOIN</span><span class=w> </span><span class=n>PC</span><span class=w> </span><span class=k>ON</span><span class=w> </span><span class=n>Product</span><span class=p>.</span><span class=n>model</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>PC</span><span class=p>.</span><span class=n>model</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>WHERE</span><span class=w> </span><span class=n>Product</span><span class=p>.</span><span class=n>maker</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s1>&#39;B&#39;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>UNION</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>SELECT</span><span class=w> </span><span class=n>Product</span><span class=p>.</span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=n>Laptop</span><span class=p>.</span><span class=n>price</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>Product</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>JOIN</span><span class=w> </span><span class=n>Laptop</span><span class=w> </span><span class=k>ON</span><span class=w> </span><span class=n>Product</span><span class=p>.</span><span class=n>model</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>Laptop</span><span class=p>.</span><span class=n>model</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>WHERE</span><span class=w> </span><span class=n>Product</span><span class=p>.</span><span class=n>maker</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s1>&#39;B&#39;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>UNION</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>SELECT</span><span class=w> </span><span class=n>Product</span><span class=p>.</span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=n>Printer</span><span class=p>.</span><span class=n>price</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>Product</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>JOIN</span><span class=w> </span><span class=n>Printer</span><span class=w> </span><span class=k>ON</span><span class=w> </span><span class=n>Product</span><span class=p>.</span><span class=n>model</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>Printer</span><span class=p>.</span><span class=n>model</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>WHERE</span><span class=w> </span><span class=n>Product</span><span class=p>.</span><span class=n>maker</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s1>&#39;B&#39;</span><span class=p>;</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604162656.png loading=lazy></p><h3 id=c-查询只卖笔记本电脑不卖-pc-的厂商>c) 查询只卖笔记本电脑不卖 PC 的厂商</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=k>DISTINCT</span><span class=w> </span><span class=n>maker</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>Product</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>WHERE</span><span class=w> </span><span class=k>type</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s1>&#39;laptop&#39;</span><span class=w> </span><span class=k>AND</span><span class=w> </span><span class=n>maker</span><span class=w> </span><span class=k>NOT</span><span class=w> </span><span class=k>IN</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>SELECT</span><span class=w> </span><span class=n>maker</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>FROM</span><span class=w> </span><span class=n>Product</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>WHERE</span><span class=w> </span><span class=k>type</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s1>&#39;pc&#39;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604162722.png loading=lazy></p><h3 id=d-查询出现在两种或两种以上-pc-中的硬盘的大小>d) 查询出现在两种或两种以上 PC 中的硬盘的大小</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=n>hd</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>PC</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>GROUP</span><span class=w> </span><span class=k>BY</span><span class=w> </span><span class=n>hd</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>HAVING</span><span class=w> </span><span class=k>COUNT</span><span class=p>(</span><span class=k>DISTINCT</span><span class=w> </span><span class=n>model</span><span class=p>)</span><span class=w> </span><span class=o>&gt;=</span><span class=w> </span><span class=mi>2</span><span class=p>;</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604162744.png loading=lazy></p><h3 id=e-查询每对具有相同速度和-ram-的-pc-的型号每一对只能列出一次-例如若-ij-已被列出则-ji-就不能再被列出>e) 查询每对具有相同速度和 RAM 的 PC 的型号。每一对只能列出一次; 例如，若 (i,j) 已被列出，则 (j,i) 就不能再被列出。</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=n>p1</span><span class=p>.</span><span class=n>model</span><span class=w> </span><span class=k>AS</span><span class=w> </span><span class=n>model1</span><span class=p>,</span><span class=w> </span><span class=n>p2</span><span class=p>.</span><span class=n>model</span><span class=w> </span><span class=k>AS</span><span class=w> </span><span class=n>model2</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>PC</span><span class=w> </span><span class=n>p1</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>JOIN</span><span class=w> </span><span class=n>PC</span><span class=w> </span><span class=n>p2</span><span class=w> </span><span class=k>ON</span><span class=w> </span><span class=n>p1</span><span class=p>.</span><span class=n>speed</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>p2</span><span class=p>.</span><span class=n>speed</span><span class=w> </span><span class=k>AND</span><span class=w> </span><span class=n>p1</span><span class=p>.</span><span class=n>ram</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>p2</span><span class=p>.</span><span class=n>ram</span><span class=w> </span><span class=k>AND</span><span class=w> </span><span class=n>p1</span><span class=p>.</span><span class=n>model</span><span class=w> </span><span class=o>&lt;</span><span class=w> </span><span class=n>p2</span><span class=p>.</span><span class=n>model</span><span class=p>;</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604162806.png loading=lazy></p><h2 id=习题-631-查询查询结果>习题 6.3.1 查询&查询结果</h2><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604162940.png loading=lazy></p><h3 id=a-找出速度在-30-以上的-pc-制造商>a) 找出速度在 3.0 以上的 PC 制造商</h3><p>方法 1：使用 <code>IN</code> 操作符</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=k>DISTINCT</span><span class=w> </span><span class=n>maker</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>Product</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>WHERE</span><span class=w> </span><span class=n>model</span><span class=w> </span><span class=k>IN</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>SELECT</span><span class=w> </span><span class=n>model</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>FROM</span><span class=w> </span><span class=n>PC</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>WHERE</span><span class=w> </span><span class=n>speed</span><span class=w> </span><span class=o>&gt;</span><span class=w> </span><span class=mi>3</span><span class=p>.</span><span class=mi>0</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604163234.png loading=lazy></p><p>方法 2：使用 <code>EXISTS</code> 操作符</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=k>DISTINCT</span><span class=w> </span><span class=n>maker</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>Product</span><span class=w> </span><span class=n>p</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>WHERE</span><span class=w> </span><span class=k>EXISTS</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>SELECT</span><span class=w> </span><span class=mi>1</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>FROM</span><span class=w> </span><span class=n>PC</span><span class=w> </span><span class=n>pc</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>WHERE</span><span class=w> </span><span class=n>pc</span><span class=p>.</span><span class=n>model</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>p</span><span class=p>.</span><span class=n>model</span><span class=w> </span><span class=k>AND</span><span class=w> </span><span class=n>pc</span><span class=p>.</span><span class=n>speed</span><span class=w> </span><span class=o>&gt;</span><span class=w> </span><span class=mi>3</span><span class=p>.</span><span class=mi>0</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604163256.png loading=lazy></p><h3 id=b-找出价格最高的打印机>b) 找出价格最高的打印机</h3><p>方法 1：使用 <code>MAX</code> 函数和子查询对比</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=n>price</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>Printer</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>WHERE</span><span class=w> </span><span class=n>price</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=p>(</span><span class=k>SELECT</span><span class=w> </span><span class=k>MAX</span><span class=p>(</span><span class=n>price</span><span class=p>)</span><span class=w> </span><span class=k>FROM</span><span class=w> </span><span class=n>Printer</span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604163319.png loading=lazy></p><p>方法 2：使用 <code>ALL</code> 操作符</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=n>model</span><span class=p>,</span><span class=w> </span><span class=n>price</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>Printer</span><span class=w> </span><span class=n>p</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>WHERE</span><span class=w> </span><span class=n>price</span><span class=w> </span><span class=o>&gt;=</span><span class=w> </span><span class=k>ALL</span><span class=w> </span><span class=p>(</span><span class=k>SELECT</span><span class=w> </span><span class=n>price</span><span class=w> </span><span class=k>FROM</span><span class=w> </span><span class=n>Printer</span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604163337.png loading=lazy></p><h2 id=选作习题-646-查询查询结果>【选作】习题 6.4.6 查询&查询结果</h2><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604163431.png loading=lazy>
+<img src=/blog/p/db-hw/assets/Pasted%20image%2020240604163452.png loading=lazy></p><h3 id=a-查询-pc-的平均速度>a) 查询 PC 的平均速度：</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=k>AVG</span><span class=p>(</span><span class=n>speed</span><span class=p>)</span><span class=w> </span><span class=k>AS</span><span class=w> </span><span class=n>avg_speed</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>PC</span><span class=p>;</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604163634.png loading=lazy></p><h3 id=b-查询价格高于-1000-的笔记本电脑的平均速度>b) 查询价格高于 $1000 的笔记本电脑的平均速度：</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=k>AVG</span><span class=p>(</span><span class=n>speed</span><span class=p>)</span><span class=w> </span><span class=k>AS</span><span class=w> </span><span class=n>avg_speed</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>Laptop</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>WHERE</span><span class=w> </span><span class=n>price</span><span class=w> </span><span class=o>&gt;</span><span class=w> </span><span class=mi>1000</span><span class=p>;</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604163646.png loading=lazy></p><h3 id=c-查询厂商a生产的-pc-的平均价格>c) 查询厂商“A”生产的 PC 的平均价格：</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=k>AVG</span><span class=p>(</span><span class=n>price</span><span class=p>)</span><span class=w> </span><span class=k>AS</span><span class=w> </span><span class=n>avg_price</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>FROM</span><span class=w> </span><span class=n>PC</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>WHERE</span><span class=w> </span><span class=n>model</span><span class=w> </span><span class=k>IN</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>SELECT</span><span class=w> </span><span class=n>model</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>FROM</span><span class=w> </span><span class=n>Product</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>WHERE</span><span class=w> </span><span class=n>maker</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s1>&#39;A&#39;</span><span class=w> </span><span class=k>AND</span><span class=w> </span><span class=k>type</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s1>&#39;PC&#39;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><img src=/blog/p/db-hw/assets/Pasted%20image%2020240604163704.png loading=lazy></p></section><footer class=article-footer><section class=article-tags><a href=/blog/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/>数据库</a></section><section class=article-copyright><svg class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>除非另有声明，本站所有内容以 CC BY-NC-SA 4.0 协议共享</span></section><section class=article-lastmod><svg class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<span>最后更新于 Aug 06, 2024 00:00 UTC</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/blog/p/2025-ml-note/><div class=article-details><h2 class=article-title>机器学习 全四周 概念整理</h2></div></a></article><article><a href=/blog/p/ipn-w3/><div class=article-details><h2 class=article-title>互联网协议 - Week3概念整理</h2></div></a></article><article><a href=/blog/p/ipn-w1/><div class=article-details><h2 class=article-title>互联网协议 - 课程概要 & Week1概念整理</h2></div></a></article><article><a href=/blog/p/java-w1/><div class=article-details><h2 class=article-title>JAVA高级语言程序设计 - Week1概念整理</h2></div></a></article><article><a href=/blog/p/2023-em-question-1/><div class=article-details><h2 class=article-title>企业管理 第一题 课件整理</h2></div></a></article></div></div></aside><footer class=site-footer><section class=copyright>&copy;
+2023 -
+2025 KatMelon's Blog</section><section class=powerby>使用 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> 构建<br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.30.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/blog/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>

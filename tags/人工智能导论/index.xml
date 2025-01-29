@@ -1,0 +1,1422 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>人工智能导论 on KatMelon's Blog</title><link>https://katomelon.github.io/blog/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%BC%E8%AE%BA/</link><description>Recent content in 人工智能导论 on KatMelon's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Mon, 18 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://katomelon.github.io/blog/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%BC%E8%AE%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>人工智能导论 - Week3概念整理</title><link>https://katomelon.github.io/blog/p/intro-to-ai-w3/</link><pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate><guid>https://katomelon.github.io/blog/p/intro-to-ai-w3/</guid><description>&lt;p>&lt;img src="https://badges.toozhao.com/badges/01HJ3GGQ6MR66VM70BVZS4SSVX/green.svg"
+loading="lazy"
+alt="Page Views Count"
+>&lt;/p>
+&lt;h2 id="本章">本章
+&lt;/h2>&lt;p>分两个主要部分：实用AI工具和计算机视觉。前一部分介绍一些框架和工具，内容不多，后一部分介绍计算机视觉，占大头。&lt;/p>
+&lt;p>此文档整理总结Week3 Slide中的定义和知识点。&lt;/p>
+&lt;h2 id="所有知识点">所有知识点
+&lt;/h2>&lt;p>按PPT内顺序排列。列出PPT和tutorial中所有概念的英文原始释义（若有）和中文翻译，方便背诵。&lt;/p>
+&lt;hr>
+&lt;h3 id="scikit-learn">scikit-learn
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>scikit-learn&lt;/td>
+&lt;td>PPT p5-p13&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Simple and efficient tools for predictive data analysis&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>用于预测数据分析的简单有效的工具&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>开源免费可商用的数据分析工具，对所有人可用，不限制训练框架（Tensorflow. Pytorch等），支持机器学习方法，数据处理，可视化，基于Numpy、SciPy、matplotlib等库。&lt;br />提供分类Classification、回归Regression、聚类Clustering等工具。课件中给出了一些实际的例子。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="tensor-张量">Tensor 张量
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Tensor 张量&lt;/td>
+&lt;td>PPT p14&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>In deep learning frameworks, they use specialized data structure called Tensor.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>在深度学习框架中，使用称为张量的专用数据结构。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>张量的本质是多维数组（Multidimensional Array）。例如，0阶张量的本质是一个实数或复数，一阶张量是一个矢量，二阶张量是一个矩阵，更高阶数的张量类似，例如三阶张量表示立方体中的数等等。&lt;br />&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_oQhIsU2aXR.png"
+width="569"
+height="411"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_oQhIsU2aXR_hu_74e8b4e8a12df3f8.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_oQhIsU2aXR_hu_977c07a7ba22db2b.png 1024w"
+loading="lazy"
+alt="img"
+class="gallery-image"
+data-flex-grow="138"
+data-flex-basis="332px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="gpu与深度学习">GPU与深度学习
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>GPU与深度学习&lt;/td>
+&lt;td>PPT p16&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Deep learning relies on GPUs.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>深度学习依赖于GPU&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>严格来说这说法不准确，深度学习依赖密集计算，只不过是跟CPU一比GPU刚好能干这活。GPU毕竟还是专搞图形计算的。&lt;br />&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_qtOtKSEPF1.png"
+width="1210"
+height="583"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_qtOtKSEPF1_hu_37892f4b588ff198.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_qtOtKSEPF1_hu_49fed75410e48c91.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="207"
+data-flex-basis="498px"
+>&lt;br />CPU适用于复杂逻辑控制，例如武器装备，IT等场景；GPU适用于密码学、挖矿、图形计算等需要平行计算的场景。CPU耗能小，GPU耗能高。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="tensorflow">TensorFlow
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>TensorFlow&lt;/td>
+&lt;td>PPT p14-p17&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>An open-source Deep Learning library&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>一款开源的深度学习库&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>由谷歌贡献。其训练流程：&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_Y5yFIP1sSR.png"
+width="1392"
+height="495"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_Y5yFIP1sSR_hu_c27367668e383334.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_Y5yFIP1sSR_hu_5904433df1aa5769.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="281"
+data-flex-basis="674px"
+>其编程模型可将数字计算（Numeric Computation）过程表达为图表。图表节点为带有数字输入输出的操作，图表的边缘为节点间流动着的张量。&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_65pfTsx9M9.png"
+width="790"
+height="340"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_65pfTsx9M9_hu_80ccf82384f70953.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_65pfTsx9M9_hu_32c6d6c2552420cd.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="232"
+data-flex-basis="557px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="static-graph--dynamic-graph">Static Graph &amp;amp; Dynamic Graph
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Static Graph &amp;amp; Dynamic Graph&lt;/td>
+&lt;td>PPT p20 &amp;amp; Tutorial Q1&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>The computation process can be view as a graph.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>计算过程可展示为图表&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>A static graph is one that defines the entire computation graph before performing the computation. When the data is obtained, it is calculated according to the defined calculation graph.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>静态图是在执行计算之前定义整个计算图的图。获得数据后，根据定义的计算图进行计算。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Dynamic graphs, on the other hand, generate computational graphs as they are computed, and the complete graph is known only when the computation is completed.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>动态图在计算时生成计算图，并且只有在计算完成时才能得到完整的图表。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_r4OF0m_SwR.png"
+width="1321"
+height="536"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_r4OF0m_SwR_hu_a3913d16b98332c8.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_r4OF0m_SwR_hu_3eab25e77be4f958.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="246"
+data-flex-basis="591px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="pytorch">PyTorch
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Pytorch&lt;/td>
+&lt;td>PPT p22&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Open-source machine learning library&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>开源的机器学习库&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>由Fackbook AI研究实验室维护，依靠GPU能力，自动计算梯度，更容易测试和开发新产品。&lt;br />优点有：类Python（Pythonic）设计理念，简洁；自动计算梯度（Autograd）；有许多已实现好的算法和组件。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="brief-history-of-computer-vision">Brief History of Computer Vision
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Brief History of Computer Vision&lt;/td>
+&lt;td>PPT p31&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_0fPhtYtABy.png"
+width="945"
+height="670"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_0fPhtYtABy_hu_28be9f54f338390a.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_0fPhtYtABy_hu_485deab6c27a587b.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="141"
+data-flex-basis="338px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="human-vision-人类视觉">Human Vision 人类视觉
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Human Vision 人类视觉&lt;/td>
+&lt;td>PPT p42&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Vision is the process of discovering what is present in the world and where it is by looking&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>视觉是通过观察发现世界上存在什么以及它在哪里的过程&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_tbdQfvMkKl.png"
+width="738"
+height="199"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_tbdQfvMkKl_hu_f8d5e0feb9c88f8e.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_tbdQfvMkKl_hu_5db7c7a2c1beb2e9.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="370"
+data-flex-basis="890px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="computer-vision-计算机视觉">Computer Vision 计算机视觉
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Computer Vision 计算机视觉&lt;/td>
+&lt;td>PPT p42&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Computer Vision is the study of analysis of pictures and videos in order to achieve results similar to those as by humans&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>计算机视觉是一门对图片和视频进行分析的研究，目的是为了获得与人类（视觉）类似的结果&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_kqipoAXa5_.png"
+width="1159"
+height="337"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_kqipoAXa5__hu_c353dce14f666649.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_kqipoAXa5__hu_20ec47de362d649.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="343"
+data-flex-basis="825px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="image-图像">Image 图像
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Image 图像&lt;/td>
+&lt;td>PPT p44&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>An image is a rectangular grid of data of light values&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>图像是光值（亮度值）数据的矩形网格&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>此处给出的定义在PPT中指代灰度图像，更严格的定义应该是&lt;br/>图像是像素的矩阵网格。像素的值可以是二进制、灰度、颜色或多模态等。（见PPT p48）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="main-goal-of-computer-vision">Main Goal of Computer Vision
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Main Goal of Computer Vision&lt;/td>
+&lt;td>PPT p64&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Need for an algorithm that can write the rules for us so that we don’t have to write it by hand.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>需要一种可以自己寻找规则的算法，这样就无需手动编写了。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Instead of creating object models, hundreds of thousands of pictures were collected from the internet and an algorithm was used.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>不创建具体的模型，而是从网络上收集大量图片，使用算法（来学习规则）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="computer-vision-techniques">Computer Vision Techniques
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Computer Vision Techniques&lt;/td>
+&lt;td>PPT p67&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Classification, Semantic Segmentation, Object Detection, Instance Segmentation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>分类，语义分割，目标检测，实例分割&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="convolution-卷积">Convolution 卷积
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Convolution 卷积&lt;/td>
+&lt;td>PPT p69&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Problems in processing images with fully connected networks：&lt;br/>全连接网络图像处理中的问题:&lt;br/>Too many parameters in the weight matrix -&amp;gt; overfitting&lt;br/>权重矩阵中参数太多-&amp;gt;过拟合&lt;br/>Convolutional neural network solution&lt;br/>卷积神经网络解决方案&lt;br/>Local correlation, parameter sharing&lt;br/>本地关联，参数共享&lt;br/>&lt;br/>&lt;strong>卷积的四个基本属性（Basic Properties）：&lt;/strong> &lt;br/>卷积核（Kernel）、步幅（Stride）、填充（Padding）、通道（Channel）。&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_XI4OaZT-iQ.png"
+width="1050"
+height="606"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_XI4OaZT-iQ_hu_3c84f74f35cdf9f.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_XI4OaZT-iQ_hu_590ee896d20ed094.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="173"
+data-flex-basis="415px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="kernel-卷积核">Kernel 卷积核
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Kernel 卷积核&lt;/td>
+&lt;td>PPT p71&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Kernel: also known as receptive field, the sense of convolution operation, intuitively understood as a filter matrix, commonly used convolution kernel size of 3 × 3, 5 × 5 and so on;&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>卷积核：也称感受野，是卷积操作的核心。直观地理解为一个滤波器矩阵，常用的卷积核尺寸有3×3、5×5等。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="stride-步幅">Stride 步幅
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Stride 步幅&lt;/td>
+&lt;td>PPT p71&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Stride: the pixels moved by the convolution kernel at each step when traversing the feature map&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>步幅：在遍历特征图时，卷积核在每一步移动的像素数。步幅决定了卷积操作对输入的采样间隔。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="padding-填充">Padding 填充
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Padding 填充&lt;/td>
+&lt;td>PPT p71&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Padding: the way to deal with the boundary of the feature map. To fill the boundary (generally filled with 0), and then perform the convolution operation, which will make the size of the output feature map the same as the size of the input feature map;&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>填充：处理特征图边界的方法。通过在特征图边界填充（通常使用0进行填充），然后进行卷积操作，可以使输出特征图的大小与输入特征图相同。填充有助于保持特征图边缘信息。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="channel-通道">Channel 通道
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Channel 通道&lt;/td>
+&lt;td>PPT p71&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Channel: the number of channels (layers) of the convolution layer.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>通道：卷积层的通道（层）数&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>每个通道对输入进行一种特定的卷积操作，多个通道的输出叠加形成最终的输出特征图。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="卷积的计算">卷积的计算
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>卷积的计算&lt;/td>
+&lt;td>PPT p74-p83&lt;br/>Tutorial Solution Q4 &amp;amp; Q5&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>详见专题子页面：(WIP)&lt;/p>
+&lt;hr>
+&lt;h3 id="de-convolution-反卷积">De-convolution 反卷积
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>De-convolution 反卷积&lt;/td>
+&lt;td>PPT p84&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Equivalent to a transposition computation after converting a convolution kernel to a sparse matrix&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>相当于将卷积核转换为稀疏矩阵后的转置计算&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>卷积是把图片弄成特征图，反卷积是把特征图弄成图片&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="dilatedatrous-convolution-膨胀卷积">Dilated/Atrous Convolution 膨胀卷积
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Dilated/Atrous Convolution 膨胀卷积&lt;/td>
+&lt;td>PPT p86&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>To expand the receptive field, the kernel is &amp;ldquo;inflated&amp;rdquo; by inserting spaces between elements inside the convolutional kernel to form a &amp;ldquo;null convolution&amp;rdquo; (or inflated convolution), and the kernel to be expanded is indicated by the expansion rate parameter L, i.e., L-1 spaces are inserted between the kernel elements.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>为了扩大感受野，卷积核通过在卷积核内的元素之间插入空白，形成一种“空洞卷积”（或膨胀卷积）。要扩展的卷积核由扩张率参数L指示，即在卷积核元素之间插入L-1个空格。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_Ds0u0blvNc.png"
+width="871"
+height="349"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_Ds0u0blvNc_hu_50347d17f41979fe.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_Ds0u0blvNc_hu_99e1778ed500274b.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="249"
+data-flex-basis="598px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="pooling-池化">Pooling 池化
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Pooling 池化&lt;/td>
+&lt;td>PPT p87&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Pooling is used for regions of the image that do not overlap (this is different from the convolution operation)&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>池化操作用于图像中不重叠的区域（与卷积操作不同）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_KGZlrUYnBe.png"
+width="958"
+height="400"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_KGZlrUYnBe_hu_46d32dc10a575f8c.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_KGZlrUYnBe_hu_6e8e30d3a0bc438e.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="239"
+data-flex-basis="574px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="flatten-压平">Flatten 压平
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Flatten 压平&lt;/td>
+&lt;td>PPT p90&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Flatten refers to the process of taking the two-dimensional feature maps produced by the convolution and pooling layers and transforming them into a one-dimensional vector.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>&amp;ldquo;压平&amp;quot;指的是将由卷积和池化层产生的二维特征图转化为一维向量的过程。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_1UxOnPC0oc.png"
+width="942"
+height="387"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_1UxOnPC0oc_hu_52c5208294106997.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_1UxOnPC0oc_hu_7d43be5a508fc91b.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="243"
+data-flex-basis="584px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="fully-connect--dropout">Fully Connect &amp;amp; Dropout
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Fully Connect &amp;amp; Dropout&lt;/td>
+&lt;td>PPT p91&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>全连接（Fully Connected）&lt;/strong>：&lt;br/>将前一层的所有神经元连接到当前层的每个神经元。&lt;br/>用于在神经网络中进行分类或回归。&lt;br/>&lt;br/>&lt;strong>Dropout（丢弃）&lt;/strong>：&lt;br/>在训练期间随机丢弃一部分神经元，防止网络过度依赖某些特定神经元。有助于减少过拟合并提高模型的泛化能力。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="normalization-正交化归一化">Normalization 正交化/归一化
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Normalization 正交化/归一化&lt;/td>
+&lt;td>PPT p92-p93&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Normalization techniques in Convolutional Neural Networks (CNNs) are crucial for improving training stability, accelerating convergence, and achieving better generalization.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>在卷积神经网络（CNNs）中，归一化技术对于提高训练稳定性、加速收敛速度以及实现更好的泛化效果至关重要。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_gl0Wns1Tmz.png"
+width="970"
+height="331"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_gl0Wns1Tmz_hu_9a96be0ae071dc53.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_gl0Wns1Tmz_hu_8103fb62547f5f33.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="293"
+data-flex-basis="703px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="feature-extraction-特征提取">Feature extraction 特征提取
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Feature extraction 特征提取&lt;/td>
+&lt;td>PPT p93-p94&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Feature is a scalar x which is quantitatively describes a property of the Object.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>特征是一个标量x，定量地描述了对象的属性。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>A pattern is represented by a set of N features, or attributes, viewed as a N- dimensional feature vector.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>模式由一组N个特征或属性表示，这些特征或属性被视为N维特征向量。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Class is a set of patterns that share some common properties&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>类型是拥有一些公共属性的模式的集合&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Classification is a mathematical function or algorithm which assigns a feature to one of the classes.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>分类是一种数学函数或算法，将一个特征分配给一个类型。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>Good features:&lt;/strong>&lt;br/>Objects from the same class have similar feature values.&lt;br/>同类物体值相同&lt;br/>Objects from different classes have different values.&lt;br/>不同类物体值不同&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_Np_I-gygy8.png"
+width="894"
+height="369"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_Np_I-gygy8_hu_6031058bf85c1554.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_Np_I-gygy8_hu_2f9b367cd3f79572.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="242"
+data-flex-basis="581px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="image-classification-图像分类">Image Classification 图像分类
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Image Classification 图像分类&lt;/td>
+&lt;td>PPT p97&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Given a set of pixels determine the category of image&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>给定一组像素，确定该图像的类别&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="steps-to-build-a-computer-vision-model">Steps to build a computer vision model
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Steps to build a computer vision model&lt;/td>
+&lt;td>PPT p98&lt;br/>Tutorial Solution Q2&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Data collection: Collect all possible data that is related to the goal of the model&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>数据收集：收集与模型目标相关的所有可能的数据&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Data cleaning: Filter thecollected data and remove unclear pictures&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>数据清理：对收集到的数据进行过滤，去除不清晰的图片&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Data preparation: Resize all the pictures to one common size&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>数据准备：将所有图片调整为一个通用大小&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Build and train the model: Start coding&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>构建和训练模型：开始写代码&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>classification or recognition (making sense of the visual information)&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>分类或识别：使视觉信息有意义&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="deep-learning-based-image-classification">Deep Learning based Image Classification
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Deep Learning based Image Classification&lt;/td>
+&lt;td>PPT p100&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>Cascade of Non-linear Transformations（非线性变换的级联）&lt;/strong>：&lt;br/>&lt;strong>含义：&lt;/strong> 一系列非线性变换的级联，其中输入数据通过一系列非线性操作或转换，逐渐被映射到更高级别的表示。这在深度学习中很常见，因为深层神经网络的每一层都可以看作对输入数据的一种非线性变换。&lt;br/>&lt;br/>&lt;strong>End-to-End Learning（端到端学习）&lt;/strong>：&lt;br/>&lt;strong>含义：&lt;/strong> 整个系统的学习过程，从输入直接到输出，没有人为设计的中间步骤或特征。在端到端学习中，模型尽可能地从原始输入到最终目标输出进行学习，而无需手工设计中间阶段的特征提取或转换。&lt;br/>&lt;br/>&lt;strong>General Framework (Any Hierarchical Model is Deep)（通用框架，任何分层模型都是深度的）&lt;/strong>：&lt;br/>&lt;strong>含义：&lt;/strong> 深度学习中的一般性框架，其中任何具有分层结构的模型都可以被认为是深度模型。深度模型通常包含多个层次的表示学习，这使得模型能够逐渐学习数据的抽象表示。&lt;br/>&lt;br/>Q：为什么需要很多层？&lt;br/>A：When input has hierarchical structure, the use of a hierarchical architecture is potentially more efficient because intermediate computations can be re-used. DL architectures are efficient also because they use distributed representations which are shared across classes.&lt;br/>当输入具有分层结构时，使用分层架构可能更有效，因为中间计算可以被重复利用。深度学习架构也是高效的，因为它们使用分布式表示，这些表示在不同类别之间是共享的。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="performance-metrics-性能指标">Performance Metrics 性能指标
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Performance Metrics 性能指标&lt;/td>
+&lt;td>PPT p126&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>用以评测模型的准确度和精确度。&lt;br/>&lt;br/>&lt;strong>True/False Positive/Negative：&lt;/strong> 模型正确/错误预测正/负类别的数量。&lt;br/>&lt;br/>&lt;strong>Precision（精确度）&lt;/strong>：TP/(TP+FP) - what percentage of the positive class is actually positive?&lt;br/>表示被模型正确分类为正类别的样本数量与模型所有预测为正类别的样本数量之比。&lt;br/>&lt;br/>&lt;strong>Recall（召回率）：&lt;/strong> TP/(TP+FN) - what percentage of the positive class gets captured by the model?&lt;br/>表示实际正类别样本中被模型正确分类的数量与所有实际正类别样本的数量之比。&lt;br/>&lt;br/>&lt;strong>Accuracy（准确率）：&lt;/strong>(TP+TN)/(TP+FP+TN+FN) - what percentage of predictions are correct?&lt;br/>是模型正确分类的图像数量与总图像数量之比。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="confusion-matrix-混淆矩阵">Confusion Matrix 混淆矩阵
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Confusion Matrix 混淆矩阵&lt;/td>
+&lt;td>PPT p128&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Good for checking where your model is incorrect&lt;br/>用于检查模型不正确的地方&lt;br/>For multi-class classification it reflects which classes are correlated&lt;br/>对于多类别的分类，它反映了哪些类型是相关的&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="segmentation-分割">Segmentation 分割
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Segmentation 分割&lt;/td>
+&lt;td>PPT p133&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>Segmentation is the process of breaking an image into groups, based on similarities of the pixels&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>分割是根据像素的相似性将图像分成组的过程&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_zZuuCkOPmQ.png"
+width="934"
+height="436"
+srcset="https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_zZuuCkOPmQ_hu_ccd81e93e26114c8.png 480w, https://katomelon.github.io/blog/blog/p/intro-to-ai-w3/image/image_zZuuCkOPmQ_hu_7ecfedf642ebb7f.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="214"
+data-flex-basis="514px"
+>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="object-recognition-物体识别">Object Recognition 物体识别
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概念&lt;/th>
+&lt;th>位置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Object Recognition 物体识别&lt;/td>
+&lt;td>PPT p144&lt;br/>Tutorial Solution Q3&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>原&lt;/th>
+&lt;th>It is the task of finding and identifying objects in an image or video sequence&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>译&lt;/td>
+&lt;td>是在图像或视频序列中寻找和识别物体的任务&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>步骤：&lt;/strong>&lt;br/>Detection – of separate objects&lt;br/>Description – of their geometry and positions in 3D&lt;br/>Classification – as being one of a known class&lt;br/>Identification – of the particular instance&lt;br/>Understanding – of spatial relationships between objects&lt;br/>&lt;br/>分离物体的检测在3D中描述它们的几何形状和位置&lt;br/>分类为已知类别之一&lt;br/>特定实例的标识&lt;br/>理解物体之间的空间关系&lt;br/>&lt;br/>&lt;strong>应用：&lt;/strong>&lt;br/>It is used in various applications, such as autonomous navigation (recognizing obstacles), augmented reality (overlaying digital information on real-world objects), and robotics (identifying objects for manipulation).&lt;br/>它被用于各种应用程序，例如自主导航(识别障碍物)、增强现实(将数字信息覆盖在现实世界的对象上)和机器人(识别用于操作的对象)。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr></description></item></channel></rss>

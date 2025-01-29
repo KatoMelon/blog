@@ -1,0 +1,1979 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>企业管理 on KatMelon's Blog</title><link>https://katomelon.github.io/blog/tags/%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86/</link><description>Recent content in 企业管理 on KatMelon's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://katomelon.github.io/blog/tags/%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>企业管理 第二题 课件整理</title><link>https://katomelon.github.io/blog/p/2023-em-question-2/</link><pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate><guid>https://katomelon.github.io/blog/p/2023-em-question-2/</guid><description>&lt;p>&lt;img src="https://badges.toozhao.com/badges/01HJ3GGQ6MR66VM70BVZS4SSVX/green.svg"
+loading="lazy"
+alt="Page Views Count"
+>&lt;/p>
+&lt;h2 id="说明">说明
+&lt;/h2>&lt;p>第二题范围为课件 Lecture 5 - Lecture 8，共四节。本题总分 30 分，分为 Part A 和 Part B 两部分，Part A 为简要描述题，需要简要描述给出的概念，并需要给出一些例子。Part B 为讨论/描述题。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Describe: Give a clear description that includes all the relevant features - think of it as &amp;lsquo;paintings a picture with words&amp;rsquo;&lt;/strong>&lt;/li>
+&lt;li>描述：给出一个清晰的描述，包括所有相关的特征，把它想象成“用文字画一幅画”。&lt;/li>
+&lt;li>&lt;strong>Discuss: Examine, analyse carefully, and present considerations pro and con regarding the problems, or items involved; give a complete and detailed answer.&lt;/strong>&lt;/li>
+&lt;li>讨论：仔细检查、分析，并就所涉及的问题或项目提出赞成和反对的考虑；给出一个完整而详细的答案。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Lecture 5 介绍了宏观经济，具体话题为：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>经济衡量指标，经济结构，收入流动，商业周期&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Lecture 6 及 7 介绍了商业战略，具体话题为：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>战略，战略分析及工具，战略类型，波特五力&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Lecture 8 介绍了市场营销，具体话题为：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>营销的概念，营销组合，市场识别，市场细分&lt;/li>
+&lt;/ul>
+&lt;h2 id="lecture-5--macroeconomics">Lecture 5 – Macroeconomics
+&lt;/h2>&lt;h3 id="本节结构梳理">本节结构梳理
+&lt;/h3>&lt;p>本节介绍了衡量经济的指标（GDP），介绍了收入流动及乘数效应、加速器效应、通胀的概念，简单介绍了商业周期和其他衡量经济的指标。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Macroconomics&lt;/strong> deals with the way the economy works at international or national level&lt;/li>
+&lt;li>&lt;strong>宏观经济学&lt;/strong>研究的是&lt;strong>国际或国家层面&lt;/strong>的&lt;strong>经济运行方式&lt;/strong>&lt;/li>
+&lt;li>Microeconomics deals with individual organisations and their customers and suppliers&lt;/li>
+&lt;li>微观经济学研究的是&lt;strong>个体组织及其客户和供应商&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="macroeconomics-宏观经济学">Macroeconomics 宏观经济学
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the branch of economics that studies economic aggregates (grand totals) e.g. the level of prices, output and employment in the economy&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>经济学中研究经济总量的一个分支，如经济中的价格、产出和就业水平。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>宏观经济学关注的是整个经济。本节聚焦国家层面。&lt;/p>
+&lt;ul>
+&lt;li>Aggregate demand 总需求 - the total level of spending in the economy 经济中总支出水平&lt;/li>
+&lt;li>Aggregate supply 总供给 - the total amount of output in the economy 经济中的总产出&lt;/li>
+&lt;/ul>
+&lt;h3 id="the-structure-of-the-national-economy-国民经济结构">The structure of the national economy 国民经济结构
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Primary 第一产业 -&lt;/strong> the production and extraction of natural resources e.g. mining and from agriculture 自然资源的生产和提取&lt;/li>
+&lt;li>&lt;strong>Secondary 第二产业 -&lt;/strong> output of the manufacturing and construction sectors (e.g. phone makers) 制造和建造业&lt;/li>
+&lt;li>&lt;strong>Tertiary (Services) 第三产业/服务业 -&lt;/strong> production of services; includes finance, leisure, retail, communications and transport 服务产业，金融，休闲等&lt;/li>
+&lt;/ul>
+&lt;h3 id="measures-of-economic-structure-衡量">Measures of economic structure 衡量
+&lt;/h3>&lt;ul>
+&lt;li>在 GDP 中的占比&lt;/li>
+&lt;li>雇佣的劳动力占比&lt;/li>
+&lt;li>对国家国际收支的贡献&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>Balance of payments - &amp;ldquo;a record of all transactions between domestic consumers and firms and those based overseas&amp;rdquo;&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>国际收支——“国内消费者和公司与海外公司之间所有交易的记录”&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="circular-flow-of-income-收入循环流动">Circular flow of income 收入循环流动
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the means by which money circulates in an economy between households and firms&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>货币在家庭和企业间流动的方式&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>The level of wealth within an economy is influenced by the interactions between households, firms and government 一个经济体的财富水平受到家庭、企业和政府之间相互作用的影响&lt;/p>
+&lt;p>It follows that any change in income from employment is directly related to changes in expenditure by consumers. 就业收入的任何变化都与消费者支出的变化直接相关。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230125312714.png"
+width="1008"
+height="658"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230125312714_hu_75d5650da2fcd9d0.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230125312714_hu_8249647c8abfd396.png 1024w"
+loading="lazy"
+alt="image-20231230125312714"
+class="gallery-image"
+data-flex-grow="153"
+data-flex-basis="367px"
+>&lt;/p>
+&lt;h4 id="phillips-machine-model-of-the-economy">Phillips machine model of the economy
+&lt;/h4>&lt;p>The Phillips Machine is actually a physical hydraulic computer that can predict the running of the national economy to within 4% accuracy. 菲利普斯机实际上是一台物理液压计算机，它可以预测国民经济的运行，精度在4%以内。&lt;/p>
+&lt;h3 id="multiplier-effect-乘数效应">Multiplier effect 乘数效应
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the addition to total income and expenditure within an economy resulting from an initial injection of expenditure&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>在一个经济体中，由于最初的支出注入而增加的总收入和总支出&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>注入资金影响收入循环流动，首先影响家庭和企业，经济的其他部分随后受间接影响。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230130756670.png"
+width="1306"
+height="982"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230130756670_hu_a6ebc4f3690449f6.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230130756670_hu_1b1eec4a0ae40c94.png 1024w"
+loading="lazy"
+alt="image-20231230130756670"
+class="gallery-image"
+data-flex-grow="132"
+data-flex-basis="319px"
+>&lt;/p>
+&lt;h3 id="accelerator-effect-加速器效应">Accelerator effect 加速器效应
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>When a small change in demand has a much larger effect on investment or supply&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>当需求的微小变化会对投资或供给产生大得多的影响时&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>投资水平取决于国民收入或需求的变化率 因为它取决于变化率，可能会有很大的波动&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230130939001.png"
+width="1330"
+height="984"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230130939001_hu_1a93e2aa67cb9723.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230130939001_hu_130f4cf52ccaafc1.png 1024w"
+loading="lazy"
+alt="image-20231230130939001"
+class="gallery-image"
+data-flex-grow="135"
+data-flex-basis="324px"
+>&lt;/p>
+&lt;h3 id="inflation-通货膨胀">Inflation 通货膨胀
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>a rise in the general level of prices of services and goods&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>服务和商品价格总水平的上升&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>同样的钱买到更少商品。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>demand-pull inflation&lt;/strong> - 钱进入市场-&amp;gt;乘数效应-&amp;gt;需求增加-&amp;gt;需求拉动型通胀&lt;/li>
+&lt;li>&lt;strong>cost-push inflation&lt;/strong> - 产品原料涨价-&amp;gt;产品价格升高-&amp;gt;成本推动型通胀&lt;/li>
+&lt;/ul>
+&lt;p>通胀恶性循环：&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230132315619.png"
+width="981"
+height="640"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230132315619_hu_29d100739950a559.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230132315619_hu_5745dcdc2671132d.png 1024w"
+loading="lazy"
+alt="image-20231230132315619"
+class="gallery-image"
+data-flex-grow="153"
+data-flex-basis="367px"
+>&lt;/p>
+&lt;h3 id="business-cycle-商业周期">Business cycle 商业周期
+&lt;/h3>&lt;p>国家经济很少保持稳定。&lt;/p>
+&lt;ul>
+&lt;li>撤资导致经济下降，注资导致经济上升&lt;/li>
+&lt;li>商业周期描述了经济活动的波动&lt;/li>
+&lt;li>衰退还是繁荣，扩张还是紧缩，发展还是萧条&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230133735449.png"
+width="568"
+height="139"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230133735449_hu_937a83aa88e049fa.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230133735449_hu_e539767f4d910cb0.png 1024w"
+loading="lazy"
+alt="image-20231230133735449"
+class="gallery-image"
+data-flex-grow="408"
+data-flex-basis="980px"
+>&lt;/p>
+&lt;h3 id="other-indicators-其他指标">Other indicators 其他指标
+&lt;/h3>&lt;ul>
+&lt;li>Unemployment rates 失业率&lt;/li>
+&lt;li>Output levels 产出水平&lt;/li>
+&lt;li>Average earnings 平均收入&lt;/li>
+&lt;li>Disposable income 可支配收入&lt;/li>
+&lt;li>Consumer spending 消费者支出&lt;/li>
+&lt;li>Inflation rate 通胀率&lt;/li>
+&lt;li>Interest rates 利率&lt;/li>
+&lt;li>Overseas trade figures 海外贸易&lt;/li>
+&lt;li>Exchange rates 汇率&lt;/li>
+&lt;/ul>
+&lt;h2 id="lecture-6---strategic-analysis">Lecture 6 - Strategic Analysis
+&lt;/h2>&lt;h3 id="two-levels-of-strategies">Two levels of strategies
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Corporate-level&lt;/strong> - 企业应当做什么业务，公司的文化和领导结构（在公司合并时很重要）&lt;/li>
+&lt;li>&lt;strong>Business-level&lt;/strong> - 竞争，价值产生，持续竞争优势&lt;/li>
+&lt;/ul>
+&lt;h3 id="corporate-strategy-企业战略">Corporate strategy 企业战略
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>Identification of the purpose of the organisation and the plans and actions to achieve that purpose&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>确定组织的&lt;strong>目的&lt;/strong>，以及实现该目的的&lt;strong>计划和行动&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>索尼的例子：&lt;/p>
+&lt;p>Sony continues to prioritize management with a long-term view, and defines its purpose as to &amp;ldquo;fill the world with emotion through the power of creativity and technology,&amp;rdquo; and its management direction as &amp;ldquo;getting closer to people.&amp;rdquo; 索尼一直以长远的眼光来优先考虑管理，并将其目标定义为“通过创造力和技术的力量让世界充满情感”，将其经营方向定义为“更接近人”。&lt;/p>
+&lt;p>President and CEO Kenichiro Yoshida explained that people are at the core of the Sony Group&amp;rsquo;s business portfolio, outlined actions to strengthen Group management, and laid out the direction of the evolution of each business. 总裁兼首席执行官吉田健一郎解释说，人是索尼集团业务组合的核心，概述了加强集团管理的行动，并制定了每项业务的发展方向。&lt;/p>
+&lt;p>&lt;strong>Most organisations begin the strategy formulation process by creating a Mission statement and a Vision statement 大多数组织通过创建使命声明和愿景声明开始战略制定过程&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Mission Statement&lt;/strong> - 我们的业务是什么，没有时间线，如果没有重大变更可以持续很久&lt;/li>
+&lt;li>&lt;strong>Vision Statement&lt;/strong> - 我们想成为什么，与目标和未来更相关，通常和成功后的成就相关联&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230141709472.png"
+width="1041"
+height="580"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230141709472_hu_b354a01326e49509.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230141709472_hu_975ee00a4d04f2be.png 1024w"
+loading="lazy"
+alt="image-20231230141709472"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="430px"
+>&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230141720318.png"
+width="918"
+height="525"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230141720318_hu_c09204b7f51f19c1.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230141720318_hu_7ad4f2617ff9df2e.png 1024w"
+loading="lazy"
+alt="image-20231230141720318"
+class="gallery-image"
+data-flex-grow="174"
+data-flex-basis="419px"
+>&lt;/p>
+&lt;h3 id="business-strategy-业务战略">Business Strategy 业务战略
+&lt;/h3>&lt;ul>
+&lt;li>公司战略涉及整个组织集团层面部门级别&lt;/li>
+&lt;li>商业策略专注于特定的业务、子公司或运营单位
+&lt;ul>
+&lt;li>包括仔细考虑它的目的、资源以及它如何与它所处的环境相互作用。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>商业战略是实现长期目标的一种手段商业战略。有时被称为“业务单位战略”或“职能战略”。包括：&lt;/p>
+&lt;ul>
+&lt;li>marketing strategies 市场&lt;/li>
+&lt;li>new product development strategies 新产品开发&lt;/li>
+&lt;li>human resource strategies 人力&lt;/li>
+&lt;li>financial strategies 财务&lt;/li>
+&lt;li>legal strategies 法律&lt;/li>
+&lt;li>supply-chain strategies 供应链&lt;/li>
+&lt;li>information technology management strategies IT管理&lt;/li>
+&lt;/ul>
+&lt;p>一些例子：&lt;/p>
+&lt;ul>
+&lt;li>Geographic expansion 地理扩张&lt;/li>
+&lt;li>Diversification 多样化发展&lt;/li>
+&lt;li>Merger &amp;amp; Acquisition 并购&lt;/li>
+&lt;li>Market penetration 市场渗透&lt;/li>
+&lt;li>Retrenchment 裁员&lt;/li>
+&lt;li>Liquidation 清算&lt;/li>
+&lt;li>Joint venture 合资&lt;/li>
+&lt;/ul>
+&lt;h3 id="strategic-analysis-approaches">Strategic analysis approaches
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>rational approach 理性分析&lt;/strong> - 把战略看作科学合理的过程，使用 SWOT、PESTEL 等技术，主要目标是使利益最大化&lt;/li>
+&lt;li>&lt;strong>flexible approach 灵活分析&lt;/strong> - 环境多变复杂的时候，用 SWOT 之类的工具困难且不合理。利益最大化不一定是最优解，环境多变，历史数据可能无关紧要。有一种方法是场景分析，设想若干场景，为每种可能准备应急方案。创业公司喜欢用这种法子，比较灵活。&lt;/li>
+&lt;li>**creative approach 创意分析 **- 强调想象力，将灵活分析更进一步。取决于管理者想象力创造力。环境变化后，理性分析和灵活分析可能落后。&lt;/li>
+&lt;li>&lt;strong>behavioural approach 行为分析&lt;/strong> - 战略本身不是理性过程。可能与利益相关者出现冲突，多方主导者的行为可能影响公司战略。可能影响 SWOT 分析的开展。创业公司常用。&lt;/li>
+&lt;li>&lt;strong>incremental approach 渐进分析&lt;/strong> - 长期战略规划不明确，管理者会逐渐适应公司，战略会随外部环境变化，渐进分析提供了明确有效的方法。&lt;/li>
+&lt;/ul>
+&lt;h3 id="lack-of-strategy">lack of strategy
+&lt;/h3>&lt;ul>
+&lt;li>没有战略，被动管理，易出现危机（救火）&lt;/li>
+&lt;/ul>
+&lt;h3 id="pestel-分析-前面讲过">PESTEL 分析 （前面讲过）
+&lt;/h3>&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230144040407.png"
+width="976"
+height="438"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230144040407_hu_66eb82c277ede040.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230144040407_hu_4756ba85ef96b857.png 1024w"
+loading="lazy"
+alt="image-20231230144040407"
+class="gallery-image"
+data-flex-grow="222"
+data-flex-basis="534px"
+>&lt;/p>
+&lt;h3 id="swot-分析">SWOT 分析
+&lt;/h3>&lt;p>SWOT 即 Strengths, Weaknesses, Opportunities, Threats.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Strengths -&lt;/strong> 内部，专业营销知识，新产品，业务地点，业务流程质量，任何对业务产品/服务有利的方面。&lt;/li>
+&lt;li>&lt;strong>Weaknesses -&lt;/strong> 内部，缺少营销知识，同质化的产品，业务地点很烂，产品服务质量差。&lt;/li>
+&lt;li>&lt;strong>Opportunities -&lt;/strong> 外部，发展中的市场，合并 合资 联盟，进入新细分市场，国际市场，竞争者退出。&lt;/li>
+&lt;li>&lt;strong>Threats -&lt;/strong> 外部，新竞争者，和竞争者打价格战，竞争者有新创新产品，竞争者有牛逼进货渠道，你的产品和服务收大税。&lt;/li>
+&lt;/ul>
+&lt;p>这里 ppt 给了一个对沃尔玛做 SWOT 分析的例子，建议看下，在 ppt 的 35 页开始。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152038347.png"
+width="1033"
+height="711"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152038347_hu_c3a9a75ad86fd247.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152038347_hu_db6a368a4897de85.png 1024w"
+loading="lazy"
+alt="image-20231230152038347"
+class="gallery-image"
+data-flex-grow="145"
+data-flex-basis="348px"
+>&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152050790.png"
+width="1026"
+height="720"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152050790_hu_beb8cba30d172ee5.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152050790_hu_a73c50d65fe85d7d.png 1024w"
+loading="lazy"
+alt="image-20231230152050790"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="342px"
+>&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152104676.png"
+width="1015"
+height="723"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152104676_hu_1e5342224c4fce56.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152104676_hu_e0516ab8ea266f2.png 1024w"
+loading="lazy"
+alt="image-20231230152104676"
+class="gallery-image"
+data-flex-grow="140"
+data-flex-basis="336px"
+>&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152119769.png"
+width="1014"
+height="711"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152119769_hu_134ca8d577c8d750.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152119769_hu_3860e2470c018038.png 1024w"
+loading="lazy"
+alt="image-20231230152119769"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="342px"
+>&lt;/p>
+&lt;h2 id="lecture-7---strategic-planning">Lecture 7 - Strategic Planning
+&lt;/h2>&lt;p>战略分析用于确定现在业务情况如何，战略规划用于研究未来 5-10 年业务如何。&lt;/p>
+&lt;h3 id="strategic-planning-战略规划">Strategic Planning 战略规划
+&lt;/h3>&lt;p>Strategic planning is usually the responsibility of top-level executives at corporate headquarters and senior managers at domestic or foreign subsidiaries 战略规划通常是公司总部的高层管理人员和国内外子公司的高级管理人员的责任。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Strategic Objectives&lt;/strong>: clear statement of objectives is needed and a vision of the future direction of the organisation is required. 战略目标:需要明确的目标陈述，并且需要对组织的未来方向有一个愿景。&lt;/li>
+&lt;li>&lt;strong>Strategic Definition&lt;/strong>: strategy development can be broken down into formulation of different strategic options and then selection. 战略定义:战略发展可以分解为制定不同的战略，然后进行选择。&lt;/li>
+&lt;li>&lt;strong>Strategic Implementation&lt;/strong>: After strategy development, enactment of the strategy occurs as strategy implementation 战略实施:战略制定后实施&lt;/li>
+&lt;/ul>
+&lt;h3 id="key-factors-in-strategic-planning-关键因素">Key Factors in Strategic Planning 关键因素
+&lt;/h3>&lt;ul>
+&lt;li>Competitive Advantage 竞争优势&lt;/li>
+&lt;li>Adding Value 附加价值&lt;/li>
+&lt;li>Mass markets or niche markets 大市场或利基市场（缝隙市场的意思）&lt;/li>
+&lt;li>Cost based strategies 基于成本的战略&lt;/li>
+&lt;li>Market based strategies 基于市场的战略&lt;/li>
+&lt;/ul>
+&lt;h3 id="types-of-strategic-planning-类型">Types of strategic planning 类型
+&lt;/h3>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Growth Plans&lt;/strong> - 发展计划，有些大公司以及发展到了很难知道未来怎么发展的情况了。需要非常创新型的思维。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Contingency Plans&lt;/strong> - 应急计划，若事情没有按计划发展的计划。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>outward looking&lt;/strong> 向外看&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>inward looking&lt;/strong> 向内看&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="outward-looking-外向型战略">outward looking 外向型战略
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Competitive Advantage 竞争优势&lt;/strong> 成本优势/价格领导力&lt;/li>
+&lt;li>**New product development 新产品开发 **领先竞争对手&lt;/li>
+&lt;li>**Contraction/Expansion 收缩/扩张 **专注于自己的核心竞争力，还是扩展到更大市场&lt;/li>
+&lt;li>&lt;strong>Global 全球化&lt;/strong> 寻求扩大全球业务&lt;/li>
+&lt;/ul>
+&lt;h3 id="inward-looking-内向型战略">inward looking 内向型战略
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Downsizing 减小规模&lt;/strong> 裁剪/卖掉不需要的业务&lt;/li>
+&lt;li>**Delayering 减小层级 **扁平化管理结构，加速决策&lt;/li>
+&lt;li>&lt;strong>Restructuring 重构&lt;/strong> 完全重新思考业务模式&lt;/li>
+&lt;li>**Reengineering 重工程化 **looking at new and innovative ways of doing things to leverage the organisation&amp;rsquo;s performance 寻找新的和创新的做事方式，以利用组织的绩效&lt;/li>
+&lt;/ul>
+&lt;h3 id="porters-5-force-model-波特五力模型">Porter’s 5-force model 波特五力模型
+&lt;/h3>&lt;p>Before any company plans to expand into new markets, divests product lines, acquires new businesses, or sells divisions, it should ask itself, ‘Is the industry/market exciting/attractive?’任何公司在计划开拓新市场、剥离产品线、收购新业务或出售部门之前，都应该问问自己:“这个行业/市场是否令人兴奋/有吸引力?”&lt;/p>
+&lt;p>迈克尔·波特(Michael Porter)在1980年开发了一个分析行业内竞争的框架&lt;/p>
+&lt;p>By using this analysis technique, managers can develop their competitive strategy 通过使用这种分析技术，管理者可以制定他们的竞争战略。这种分析的结果有助于管理者意识到机会并克服威胁&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152547390.png"
+width="500"
+height="383"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152547390_hu_8714fe7884478865.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230152547390_hu_c6f86c35a9a7d529.png 1024w"
+loading="lazy"
+alt="image-20231230152547390"
+class="gallery-image"
+data-flex-grow="130"
+data-flex-basis="313px"
+>&lt;/p>
+&lt;p>使用四种力量，分析其合在一起后如何影响市场。关注服务客户和赚取利润的能力，五种力量决定了该公司对市场的吸引力。任何一种力量的变化都应当重新评估市场。&lt;/p>
+&lt;h4 id="threat-of-potential-entrants-潜在进入者的威胁">Threat of potential entrants 潜在进入者的威胁
+&lt;/h4>&lt;p>主要受进入壁垒的影响：品牌忠诚度，进入成本（如人员再培训），资本要求，分销渠道，经验曲线/学习曲线，可预期的报复，政府政策等等。可通过预期市场发展、预期利润抵消。&lt;/p>
+&lt;h4 id="bargaining-power-of-suppliers-供应商议价能力">Bargaining power of suppliers 供应商议价能力
+&lt;/h4>&lt;p>受如下因素影响：供应商数量，供应商的客户数量，数量的重要性，投入差异化程度，替代供应的可行性，更换供应商的成本（例如专业设备），企业和供应商的垂直整合能力威胁，相对于销售价格的成本。&lt;/p>
+&lt;p>&lt;strong>垂直整合（Vertical integration）&lt;/strong>：例如公司A生产组件，公司B生产产品，公司C负责分销；公司B自己开始生产组件了，这叫后向整合（Backwards integration）；公司B自己开始分销了，这叫前向整合（Forwards integration）；公司B把组件产品分销全包了，这叫全部整合（Full integration）。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230154733499.png"
+width="952"
+height="535"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230154733499_hu_b03a3c711b406d81.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230154733499_hu_cb40728fe8e7542c.png 1024w"
+loading="lazy"
+alt="image-20231230154733499"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="427px"
+>&lt;/p>
+&lt;h4 id="bargaining-power-of-buyers-买家议价能力">Bargaining power of buyers 买家议价能力
+&lt;/h4>&lt;p>受以下因素影响： 有多少客户，客户可选的供应商数量，产品分化性，已有和预期的替代产品，买家数量，买家更换供应的成本，后向整合能力，买家对价格的敏感性。&lt;/p>
+&lt;h4 id="threat-of-substitutes-替代品的威胁">Threat of substitutes 替代品的威胁
+&lt;/h4>&lt;p>替代品不一定是相同产品，能满足需求的产品都算（例如俩航空公司打架，结果开火车的给他们客户抢走完了）。受以下因素影响：买家替代的意愿，替代的相关价格，更换的成本，替代品的可用性，perceived level of product differentiation/quality 产品差异化/质量的感知水平&lt;/p>
+&lt;h4 id="degree-of-rivalry-竞争程度">Degree of rivalry 竞争程度
+&lt;/h4>&lt;p>四力合一。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230155426043.png"
+width="976"
+height="690"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230155426043_hu_ef03036ed694277b.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230155426043_hu_aa86fc94ff8ce4b7.png 1024w"
+loading="lazy"
+alt="image-20231230155426043"
+class="gallery-image"
+data-flex-grow="141"
+data-flex-basis="339px"
+>&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230155439833.png"
+width="911"
+height="862"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230155439833_hu_4e922c15df9b1953.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230155439833_hu_bff4c79123c2b0e6.png 1024w"
+loading="lazy"
+alt="image-20231230155439833"
+class="gallery-image"
+data-flex-grow="105"
+data-flex-basis="253px"
+>&lt;/p>
+&lt;h3 id="limitations-of-porters-5-force-model-局限性">Limitations of Porter’s 5-force model 局限性
+&lt;/h3>&lt;ul>
+&lt;li>It assumes relatively static market structures based originally on the economic situation in the eighties 基于80年代初的经济状况 假设市场结构还是静态的&lt;/li>
+&lt;li>Does not take into account new business models and the dynamism of the industries 没有考虑到新的商业模式和行业的活力&lt;/li>
+&lt;li>For example, technological innovations and dynamic market entrants from start-ups that will completely change business models within short times. 例如，技术创新和来自初创企业的充满活力的市场进入者将在短时间内彻底改变商业模式。&lt;/li>
+&lt;li>For instance, the computer and software industry is often considered as being highly competitive. 例如，计算机和软件行业通常被认为是竞争激烈的行业。&lt;/li>
+&lt;/ul>
+&lt;h2 id="lecture-8--marketing">Lecture 8 – Marketing
+&lt;/h2>&lt;h3 id="marketing-市场营销">Marketing 市场营销
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>Marketing is the social and managerial process by which individuals and groups obtain what they need and want through creating and exchanging products and values with others.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>市场营销是&lt;strong>个人和团体&lt;/strong>通过&lt;strong>创造&lt;/strong>和与他人&lt;strong>交换产品和价值&lt;/strong>来获得他们&lt;strong>需要和想要&lt;/strong>的东西的社会和管理过程&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="the-marketing-concept-营销的概念">The Marketing Concept 营销的概念
+&lt;/h3>&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230160413905.png"
+width="994"
+height="564"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230160413905_hu_a717cc836dd30d67.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230160413905_hu_9e5521f8b10769d3.png 1024w"
+loading="lazy"
+alt="image-20231230160413905"
+class="gallery-image"
+data-flex-grow="176"
+data-flex-basis="422px"
+>&lt;/p>
+&lt;h4 id="needs-wants--demands">Needs, wants &amp;amp; demands
+&lt;/h4>&lt;p>&lt;strong>Human need&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>a state of deprivation that you feel&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>感受到的一种被剥夺的状态&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Human want&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>tthe form that a human need takes as shaped by culture and individual personality&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>Human want 的形式是由文化和个人个性所塑造的&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Demands&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>human wants that are backed by buying power&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>由购买力支持的 human want&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="products-and-services-产品与服务">Products and services 产品与服务
+&lt;/h4>&lt;p>&lt;strong>Product&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>anything that can be offered to a market for attention, acquisition, use or consumption that might satisfy a want or need&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>任何可以提供给市场以引起注意、获取、使用或消费的东西，可以满足某种欲望或需求&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Services&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>activities, benefits or satisfactions that are offered for salle&lt;br />Services are products that consist of activities, benefits or satisfactions that are offered for sale and are essentially intangible&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>供出售的活动、利益或满意程度&lt;br />服务是由供销售的活动、利益或满足组成的产品，本质上是无形的&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="value-satisfaction-and-quality">Value, satisfaction and quality
+&lt;/h4>&lt;p>&lt;strong>Customer value&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the consumer&amp;rsquo;s assessment of the product&amp;rsquo;s overall capacity to satisfy his or her needs&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>消费者对产品满足其需求的总体能力的评估&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Customer satisfaction&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the extent to which a product&amp;rsquo;s perceived performance matches a buyer&amp;rsquo;s expectations&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>产品的感知性能与购买者期望相匹配的程度&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>产品性能高于顾客预期，顾客高兴，低于顾客预期，顾客伤心&lt;/p>
+&lt;h4 id="exchange-transactions-and-relationships">Exchange, transactions and relationships
+&lt;/h4>&lt;p>&lt;strong>Exchange&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the act of obtaining a desired object from someone by offering something in return&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>通过提供某种东西作为回报而从某人那里得到想要的东西的行为&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Transaction&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>a trade between two parties that involves at least two things of value, agreed-upon conditions, a time of agreement and a place of agreement&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>交易双方之间至少涉及两种有价值的东西、约定的条件、约定的时间和约定的地点的交易&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Relationship marketing&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the process of creating, maintaining and enhancing strong, value-laden relationships with customers and other stakeholders.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>与客户和其他利益相关者建立、维护和加强强有力的、充满价值的关系的过程。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="market">Market
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the set of all actual and potential buyers of a product or service&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>一种产品或服务的所有实际的和潜在的购买者&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="marketing-mix-营销组合">Marketing Mix 营销组合
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the set of controllable tactical marketing tools product, price, place and promotion - that the firm blends fo produce the response it wants in the target market&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>一套可控的战术营销工具——产品、价格、地点和促销——企业将其混合在一起，以在目标市场产生它想要的反应。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230164836048.png"
+width="1065"
+height="652"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230164836048_hu_8584e2d00c6921a9.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230164836048_hu_7ae637f26309a708.png 1024w"
+loading="lazy"
+alt="image-20231230164836048"
+class="gallery-image"
+data-flex-grow="163"
+data-flex-basis="392px"
+>&lt;/p>
+&lt;p>也称作 4 &amp;lsquo;P&amp;rsquo;s：Product、Promotion、Price、Place。又补充了 3 个：People、Process、Physical Environment&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230164450498.png"
+width="412"
+height="400"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230164450498_hu_14a6240a74a42518.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230164450498_hu_3747b8000f5259cd.png 1024w"
+loading="lazy"
+alt="image-20231230164450498"
+class="gallery-image"
+data-flex-grow="103"
+data-flex-basis="247px"
+>&lt;/p>
+&lt;p>数字时代的新 4P：Personalization、Participation、Peer2Peer、Predictive modelling&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230164528761.png"
+width="868"
+height="457"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230164528761_hu_7372f495dd39ee16.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230164528761_hu_ad17fedc899b89e5.png 1024w"
+loading="lazy"
+alt="image-20231230164528761"
+class="gallery-image"
+data-flex-grow="189"
+data-flex-basis="455px"
+>&lt;/p>
+&lt;h4 id="product-differentiation">Product differentiation
+&lt;/h4>&lt;p>&lt;strong>Core Product&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the problem-solving services or core benefits that consumers are really buying when they obtain a product&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>消费者在购买产品时真正购买的解决问题的服务或核心利益&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Actual Product&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>a product&amp;rsquo;s parts, quality level, features, design, brand name, packaging and other attributes that combine to deliver core product benefits&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>产品的部件、质量水平、功能、设计、品牌名称、包装和其他属性结合起来，传递核心产品的好处。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Augmented product&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>additional consumer services and benefits built around the core and actual products&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>围绕核心产品和实际产品建立的额外消费者服务和利益&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>例如，买宽带送免费安装&lt;/p>
+&lt;p>&lt;strong>Potential product&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>Potential product - includes all of the features and services that could be envisaged as beneficial to customers, i.e. what can be used to differentiate the product next?&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>潜在产品——包括所有可能对客户有益的功能和服务，也就是说，接下来可以用什么来区分产品?&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230165814572.png"
+width="1029"
+height="595"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230165814572_hu_17b3c67aa31fd13a.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230165814572_hu_e41e92eba7ed7e21.png 1024w"
+loading="lazy"
+alt="image-20231230165814572"
+class="gallery-image"
+data-flex-grow="172"
+data-flex-basis="415px"
+>&lt;/p>
+&lt;h4 id="product-classification">Product Classification
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>Consumer product&lt;/strong> - 买来自己消费
+&lt;ul>
+&lt;li>&lt;strong>Non-durable product&lt;/strong> - 不耐用品。用几次就寄了，食品、消耗品等&lt;/li>
+&lt;li>&lt;strong>Durable product&lt;/strong> - 耐用品，家具啥的&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Convenience product&lt;/strong> - 便利产品，常用，不是很乐意比价，牙膏杂志之类的&lt;/li>
+&lt;li>&lt;strong>Shopping product&lt;/strong> - 购物产品，很乐意比价，电视啥的&lt;/li>
+&lt;li>&lt;strong>Speciality product&lt;/strong> - 特色产品，有独特价值，类似劳力士手表&lt;/li>
+&lt;li>&lt;strong>Unsought product&lt;/strong> - 不需要的产品，比如人寿保险&lt;/li>
+&lt;li>&lt;strong>Industrial product&lt;/strong> - 工业产品，个人/机构买来进一步加工的产品。例如电脑芯片&lt;/li>
+&lt;/ul>
+&lt;h3 id="branding-品牌">Branding 品牌
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>a name, term, sign, symbol or design, or a combination of these, intended to identify the goods or services of one seller or group of sellers and to differentiate them from those of competitors&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>一个名称、术语、标志、符号或设计，或这些的组合，旨在识别一个或一组销售者的商品或服务，并将其与竞争对手的商品或服务区分开来。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="promotion-推销促销">Promotion 推销/促销
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>Activities that communicate the product or service and its merits to target customers and persuade them to buy&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>向目标顾客宣传产品或服务及其优点并说服他们购买的活动&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>Promotion Mix - The specific mix of advertising, personal selling, sales promotion and public relations that a company uses to pursue its advertising and marketing objectives&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>促销组合 - 公司为实现其广告和营销目标而使用的广告、个人销售、促销和公共关系的具体组合。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="promotion-tools-促销工具">Promotion tools 促销工具
+&lt;/h4>&lt;ul>
+&lt;li>Advertising 广告&lt;/li>
+&lt;li>Personal selling 个人销售&lt;/li>
+&lt;li>Sales promotion 促销活动&lt;/li>
+&lt;li>Public relations 公共关系&lt;/li>
+&lt;li>Direct marketing 直接营销&lt;/li>
+&lt;/ul>
+&lt;h3 id="price-价格">Price 价格
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the amount of money charged for a product or service, or the sum of the values that consumers exchange for the benefits of having or using the product or service&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>为某种产品或服务收取的费用，或消费者为获得或使用该产品或服务的利益而交换的价值总和。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>影响价格的因素&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230183230859.png"
+width="1009"
+height="475"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230183230859_hu_f0517a680d21a5ba.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230183230859_hu_a18693d915b79a40.png 1024w"
+loading="lazy"
+alt="image-20231230183230859"
+class="gallery-image"
+data-flex-grow="212"
+data-flex-basis="509px"
+>&lt;/p>
+&lt;p>常见的定价方法：&lt;/p>
+&lt;ul>
+&lt;li>基于成本 - 制作产品花多少钱&lt;/li>
+&lt;li>基于价值 - 顾客认为值多少钱&lt;/li>
+&lt;li>基于竞争 - 动态定价，看其他人（竞争对手）卖多少钱&lt;/li>
+&lt;/ul>
+&lt;h3 id="place">Place
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>all the company activities that make the product or service available to target customers&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>为目标客户提供产品或服务的所有公司活动&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="identifying-your-target-market-确定目标市场">Identifying your target market 确定目标市场
+&lt;/h3>&lt;p>首先需要进行市场切分。一些术语：&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230184844644.png"
+width="993"
+height="625"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230184844644_hu_3f9b4a9cd1f90e78.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230184844644_hu_578b7cc12fb0abb2.png 1024w"
+loading="lazy"
+alt="image-20231230184844644"
+class="gallery-image"
+data-flex-grow="158"
+data-flex-basis="381px"
+>&lt;/p>
+&lt;h3 id="market-segmentation">Market segmentation
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>dividing a market into distinct groups of buyers with different needs, characteristics or behaviour, who might require separate products or marketing mixes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>将市场划分为具有不同需求、特征或行为的不同买家群体，他们可能需要不同的产品或营销组合。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>Mass marketing - 大众市场&lt;/li>
+&lt;li>Segmented markets - 分割市场&lt;/li>
+&lt;li>Niche marketing - 利基市场（这是个术语）&lt;/li>
+&lt;li>Micromarketing - 微市场&lt;/li>
+&lt;/ul>
+&lt;h4 id="mass-marketing---大众市场">Mass marketing - 大众市场
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>using almost the same product, promotion and distribution for all consumers&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>对所有消费者使用几乎相同的产品、促销和分销&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>例如福特车一开始都是黑的。好处是可能可以面向更广大的市场，缺点是不同的客户希望产品能满足更小的需求。&lt;/p>
+&lt;h4 id="segmented-markets---分割市场">Segmented markets - 分割市场
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>adapting a company&amp;rsquo;s offerings so they more closely match the needs of one or more segments&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>调整公司的产品，使其更符合一个或多个细分市场的需求。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>认识到顾客有不同的需求、观念和购买行为。例如，商业/私人合同和“随用随付”移动电话市场细分。&lt;/p>
+&lt;ul>
+&lt;li>好处：市场营销更有效率，通信是面向特定客户的，这将带来更高的营销投资回报&lt;/li>
+&lt;li>坏处：可能会导致竞争水平降低，因为每个公司可能会确定一个重点细分市场&lt;/li>
+&lt;/ul>
+&lt;h4 id="niche-marketing---利基市场">Niche marketing - 利基市场
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>adapting a company&amp;rsquo;s offerings to more closely match the needs of one or more subsegments where there is often little competition&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>调整公司的产品以更紧密地满足一个或多个细分市场的需求，这些细分市场通常很少有竞争。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>利基市场营销人员必须真正了解他们的消费者的需求，这样他们才愿意为他们的产品支付额外的费用。&lt;/li>
+&lt;li>利基市场允许小公司通过将资源集中在这些利基市场来竞争，这些利基市场可能是大公司所忽视的领域&lt;/li>
+&lt;/ul>
+&lt;h4 id="micromarketing---微市场">Micromarketing - 微市场
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>a form of target marketing in which companies tailor their marketing programmes to the needs and wants of narrowly defined geographic, demographic, psychographic or behavioural segments&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>一种目标营销的形式，在这种形式中，公司根据狭窄定义的地理、人口、心理或行为细分市场的需要和需求定制营销计划。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>分两种：&lt;/p>
+&lt;ul>
+&lt;li>Local marketing - 定制满足当地特殊群体要求&lt;/li>
+&lt;li>Individual marketing - 定制，满足个人客户需求，比如定制衣服，定制假期旅行啥的。&lt;/li>
+&lt;/ul>
+&lt;h3 id="细分市场的其他方法变量">细分市场的其他方法（变量）
+&lt;/h3>&lt;ul>
+&lt;li>Geographic segmentation&lt;/li>
+&lt;li>Demographic segmentation&lt;/li>
+&lt;li>Psychographic segmentation&lt;/li>
+&lt;li>Behavioural segmentation&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230190055639.png"
+width="1018"
+height="528"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230190055639_hu_bbba81f4d9d9223c.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-2/em-question2.assets/image-20231230190055639_hu_a44600fa0321d0e.png 1024w"
+loading="lazy"
+alt="image-20231230190055639"
+class="gallery-image"
+data-flex-grow="192"
+data-flex-basis="462px"
+>&lt;/p></description></item><item><title>企业管理 第一题 课件整理</title><link>https://katomelon.github.io/blog/p/2023-em-question-1/</link><pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate><guid>https://katomelon.github.io/blog/p/2023-em-question-1/</guid><description>&lt;p>&lt;img src="https://badges.toozhao.com/badges/01HJ3GGQ6MR66VM70BVZS4SSVX/green.svg"
+loading="lazy"
+alt="Page Views Count"
+>&lt;/p>
+&lt;h2 id="说明">说明
+&lt;/h2>&lt;p>第一题范围为课件 Lecture 16 - Lecture 18，共三节。本题总分 30 分，分为 Part A 和 Part B 两部分，Part A 为概念定义题，要求对某概念给出明确定义；Part B 为描述题，要求给出例子并描述。在题干明确要求给出例子的情况下，若作答不给出例子则扣去分数。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Define: Clearly explain what a particular term means and give an example, if appropriate, to show what you mean&lt;/strong>&lt;/li>
+&lt;li>定义：清楚地解释一个特定术语的意思，如果合适的话，给出一个例子来说明你的意思&lt;/li>
+&lt;li>&lt;strong>Explain: Set out in detail the meaning of something, with reasons. Start by introducing the topic give the ‘How’ or ‘Why’&lt;/strong>&lt;/li>
+&lt;li>解释：详细说明某事的意义，并附有理由。从介绍话题开始，并给出“如何”或“为什么”&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Lecture 16 及 17 介绍了 HRM（人力资源管理），具体话题为：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>人力资源管理的职能、领导力、激励、商务沟通。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Lecture 18 介绍了企业社会责任，具体话题为：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>企业社会责任、利益相关者、承担社会责任的原因、企业治理、道德、生态责任。&lt;/li>
+&lt;/ul>
+&lt;h2 id="lecture-16---hrm-functions-leadership">Lecture 16 - HRM Functions, Leadership
+&lt;/h2>&lt;h3 id="本节结构梳理">本节结构梳理
+&lt;/h3>&lt;p>此课件从人力资源管理讲起，给出了 HRM 的定义，用 Employment Cycle 说明员工在公司中度过的流程，也是 HRM 的具体职能；提出 HRM 是从 Personnel Management 发展起，表示公司重视将人事作为资产对待，支持、鼓励、保留员工。随后给出了 HRM 各个职能的具体解释。随后给出了领导力的定义，给出了三种领导风格，并表示领导风格应根据具体情况变化使用，并给出了一系列领导方法。&lt;/p>
+&lt;blockquote>
+&lt;p>What’s the ultimate success factor for a business organisation?
+Put People First! (For Real)&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="何为人力资源管理">何为人力资源管理
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>Human Resource Management involves all &lt;strong>management decisions and actions&lt;/strong> that affect the nature of the &lt;strong>relationship&lt;/strong> between the &lt;strong>organisation&lt;/strong> and its &lt;strong>employees&lt;/strong> – its human resources&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>人力资源管理包含影响&lt;strong>组织与其员工&lt;/strong>（人力资源）之间&lt;strong>关系&lt;/strong>的所有&lt;strong>管理决策和行动&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Good management of people is essential to the success of any organisation. This is especially true in service industries where happy employees are more likely to give you happy customers&lt;/p>
+&lt;p>良好的人力资源管理是企业成功的关键，尤其是服务业，高兴的员工可以带来客户。&lt;/p>
+&lt;h3 id="employment-cycle">Employment Cycle
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>Everyone will experience most or all of the elements of the “Employment Cycle” as defined by Huczynski and Buchanan [2] in their working life&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>每个人在其职业生涯中都会经历 huzynski 和 Buchanan 所定义的“就业周期”的大部分或全部要素&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>HRM Cycle 中的每一部分都是 HRM 的职能。对单个员工来说，可能不会经历此 Cycle 中的全部过程。例如，吃处分了，就被开除了，没有什么升迁和职业规划的部分了。&lt;/p>
+&lt;p>助记：招聘，选拔，引导，培训，绩效考核，奖励，处分，职业规划，升迁，结束（解雇等）。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228181734474.png"
+width="868"
+height="442"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228181734474_hu_a2dae79e642267bc.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228181734474_hu_c4c194c920a4e81d.png 1024w"
+loading="lazy"
+alt="image-20231228181734474"
+class="gallery-image"
+data-flex-grow="196"
+data-flex-basis="471px"
+>&lt;/p>
+&lt;h3 id="hrm-发展经历---从人事管理到人力资源管理">HRM 发展经历 - 从人事管理到人力资源管理
+&lt;/h3>&lt;h4 id="personnel-management">Personnel Management
+&lt;/h4>&lt;p>于 1980 年代出现，至今很多企业也有。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>The specialist management function responsible for determining and implementing the policies and procedures which determine the stages of the employment cycle&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>专门管理职能，负责确定和实施决定就业周期各阶段的政策和程序&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>During the 1980’s, people began to acknowledge the importance of employees and the concept of human resources, i.e. that they are &lt;strong>assets&lt;/strong> of an organisation, was created&lt;/p>
+&lt;p>在20世纪80年代，人们开始认识到员工的重要性，并创造了人力资源的概念，即他们是组织的&lt;strong>资产&lt;/strong>，（所以人事管理变成人力资源管理了）&lt;/p>
+&lt;p>设立人力部门不仅是作为实际执行部门，也是将员工看作应给予支持、鼓励、保留的观点。整个公司都该这样看。&lt;/p>
+&lt;h3 id="hrm-重要性">HRM 重要性
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>The HRM function should be included in the organisational strategy&lt;br/>The Human Resource Manager or Director is now included in the top level management of an organisation e.g. the Board of Directors&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>人力资源管理职能应包括在组织战略中&lt;br/>人力资源经理或总监现在组织的高层管理中，例如董事会等&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;blockquote>
+&lt;p>We may not be able to attract or retain the personnel necessary to achieve our business objectives&lt;/p>
+&lt;p>我们可能无法吸引或留住实现我们业务目标所需的人员&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="hrm-职能">HRM 职能
+&lt;/h3>&lt;p>Employment Cycle 中的每一环都体现 HRM 职能，上面已经体现了。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228183210838.png"
+width="1026"
+height="756"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228183210838_hu_ddaa536a66bc14d3.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228183210838_hu_a21e3a5394707ea5.png 1024w"
+loading="lazy"
+alt="image-20231228183210838"
+class="gallery-image"
+data-flex-grow="135"
+data-flex-basis="325px"
+>&lt;/p>
+&lt;p>课件中有具体体现的：招聘、选拔、培训和发展、绩效考核、奖励、纪律处分。&lt;/p>
+&lt;h4 id="recruitment-招聘">Recruitment 招聘
+&lt;/h4>&lt;p>打广告招人，需要包含：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Job description -&lt;/strong> An outline of the role of the job holder&lt;/li>
+&lt;li>&lt;strong>Person specification -&lt;/strong> An outline of the skills and qualities required of the post holder&lt;/li>
+&lt;/ul>
+&lt;h4 id="selection-选拔">Selection 选拔
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>The process of assessing candidates and appointing a post holder&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>评估候选人并任命一个职位的过程&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>方法：面试，心理测试，能力测试，技能练习，展示。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Interview -&lt;/strong> most common method&lt;/li>
+&lt;li>&lt;strong>Psychometric testing -&lt;/strong> assessing the personality of the applicants&lt;/li>
+&lt;li>&lt;strong>Aptitude testing -&lt;/strong> assessing the skills of applicants&lt;/li>
+&lt;li>&lt;strong>In-tray exercise -&lt;/strong> activity based around what the applicant will be doing, e.g. writing a letter to a disgruntled customer&lt;/li>
+&lt;li>&lt;strong>Presentation -&lt;/strong> looking for different skills as well as the ideas of the candidate&lt;/li>
+&lt;/ul>
+&lt;h4 id="training--development-培训和发展">Training &amp;amp; Development 培训和发展
+&lt;/h4>&lt;p>即 Progress opportunities 进步的机会&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Personal Development -&lt;/strong> 培训等，不一定与工作直接相关&lt;/li>
+&lt;li>&lt;strong>Continuing Professional Development (CPD)&lt;/strong> &lt;strong>继续专业发展 -&lt;/strong> 例如专业证书，注册会计师、工程师啥的&lt;/li>
+&lt;/ul>
+&lt;h4 id="performance-appraisal-绩效考核">Performance Appraisal 绩效考核
+&lt;/h4>&lt;p>考核不是简单地给员工的工作表现打分。绩效考核涉及员工和指定的评估师（Appraiser）。&lt;strong>认同&lt;/strong>自己的优势、劣势以及帮助员工和组织的方法。可以带来潜能的开发、培训、奖励等。&lt;/p>
+&lt;h4 id="rewards-奖励">Rewards 奖励
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>The system of pay and benefits used by the firm to reward and motivate workers&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>公司用来&lt;strong>奖励&lt;/strong>和&lt;strong>激励&lt;/strong>工人的&lt;strong>工资和福利制度&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>不止包括钱，还包括什么月度最佳员工、假期，员工福利（车子，医保，旅行）啥的都算。&lt;/p>
+&lt;h4 id="employment-legislation-就业法律">Employment legislation 就业法律
+&lt;/h4>&lt;p>英国的一些法案，其他国家也有类似的：&lt;/p>
+&lt;ul>
+&lt;li>Employment Act 2002&lt;/li>
+&lt;li>Disability Discrimination Act 2005&lt;/li>
+&lt;li>Equal Opportunities Act&lt;/li>
+&lt;li>Relevant health and safety regulations&lt;/li>
+&lt;/ul>
+&lt;h4 id="discipline-纪律处分">Discipline 纪律/处分
+&lt;/h4>&lt;p>企业不能动不动就开除人，受就业法案限制。处理工作冲突有如下程序：&lt;/p>
+&lt;p>很多步骤需要和工会等外部机构合作。&lt;/p>
+&lt;ul>
+&lt;li>Informal meetings 非正式会议&lt;/li>
+&lt;li>Formal meetings 正式会议&lt;/li>
+&lt;li>Verbal warnings 口头警告&lt;/li>
+&lt;li>Written warnings 书面警告&lt;/li>
+&lt;li>Grievance procedures 申诉&lt;/li>
+&lt;/ul>
+&lt;h3 id="人力管理的关键角度">人力管理的关键角度
+&lt;/h3>&lt;ul>
+&lt;li>Leadership&lt;/li>
+&lt;li>Motivation&lt;/li>
+&lt;li>Communication&lt;/li>
+&lt;/ul>
+&lt;h3 id="人际关系软技能可转移技能">人际关系软技能/可转移技能
+&lt;/h3>&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228185315245.png"
+width="784"
+height="481"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228185315245_hu_d222735e123fa5e.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228185315245_hu_cb184dea003da4a5.png 1024w"
+loading="lazy"
+alt="image-20231228185315245"
+class="gallery-image"
+data-flex-grow="162"
+data-flex-basis="391px"
+>&lt;/p>
+&lt;h3 id="leadership-领导力">Leadership 领导力
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the process of influencing the activities of an organised group in its efforts toward goal setting and goal achievement&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>影响一个有组织&lt;strong>群体&lt;/strong>的&lt;strong>活动&lt;/strong>，使其努力&lt;strong>建立目标&lt;/strong>和&lt;strong>实现目标&lt;/strong>的过程&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>良好的领导往往是决定一个组织是否有效和成功的主要因素。&lt;/p>
+&lt;p>一些成功的领导者：比尔盖茨（Bill Gates）、乔布斯（Steven Jobs）等&lt;/p>
+&lt;h3 id="leadership-style-领导风格">Leadership style 领导风格
+&lt;/h3>&lt;p>三种：Autocratic（独裁）、Participative（参与）、Free-rein（自由）&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228193008794.png"
+width="1009"
+height="504"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228193008794_hu_ba35ed0c20858f90.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228193008794_hu_92cd6e6bdc06f9f0.png 1024w"
+loading="lazy"
+alt="image-20231228193008794"
+class="gallery-image"
+data-flex-grow="200"
+data-flex-basis="480px"
+>&lt;/p>
+&lt;p>好的领导者会使用这三种风格，在合适的时候使用合适的风格。坏领导者什么时候都只用一种。&lt;/p>
+&lt;h4 id="autocratic-独裁">Autocratic 独裁
+&lt;/h4>&lt;ul>
+&lt;li>Motivates by threat 用威胁激励人&lt;/li>
+&lt;li>No confidence or trust in subordinates 不信任下属&lt;/li>
+&lt;li>Imposes decisions, never delegates 强加决策，从不授权&lt;/li>
+&lt;li>Makes decisions without consultation 不经讨论就做决定&lt;/li>
+&lt;/ul>
+&lt;p>May be valuable in some types of business where decisions need to be made quickly and decisively.
+This may need to be used – but has to be used carefully&lt;/p>
+&lt;p>在某些需要快速果断地做出决策的业务类型中可能有价值
+可能需要使用，但必须谨慎使用&lt;/p>
+&lt;h4 id="participativedemocratic-参与民主">Participative/Democratic 参与/民主
+&lt;/h4>&lt;p>Encourages consultation and communication – e.g. team discussions, ideas boards, etc.
+鼓励咨询和沟通，例如团队讨论、创意板等。&lt;/p>
+&lt;p>Employees can be motivated by their ability to participate in decisions
+Decision remains with the leader
+员工参与决策的能力会激励他们
+决策权掌握在领导者手中&lt;/p>
+&lt;ul>
+&lt;li>有说服力（Persuasive） - 领导者做出决定，并试图说服别人这个决定是正确的&lt;/li>
+&lt;li>协商（Consultative） - 之前有一个协商的过程&lt;/li>
+&lt;/ul>
+&lt;h4 id="laissez-faire-free-rein-放手自由">laissez faire (free rein) 放手/自由
+&lt;/h4>&lt;p>助记：好处是责任共享，激发创意，激励员工，坏处是耽误时间，方向模糊&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>the leadership responsibilities are shared by all 领导责任共享&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Can be very useful in businesses where creative ideas are important 在需要创意时很重要&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Can be highly motivational, as people have control over their working life 人们可控制工作，高度激励性&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Can make coordination and decision making time consuming and lacking in overall direction 导致决策浪费时间，没有整体方向性&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="approaches-to-leadership-领导方法">Approaches to Leadership 领导方法
+&lt;/h3>&lt;h4 id="leadership-of-change-变革的领导力">Leadership of change 变革的领导力
+&lt;/h4>&lt;ul>
+&lt;li>The most challenging aspect of business is leading and managing change
+商业中最具挑战性的方面是领导和管理变革&lt;/li>
+&lt;/ul>
+&lt;p>商业环境受到快节奏经济的影响&lt;/p>
+&lt;p>社会变革受外部和内部因素的双重影响&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Good leaders are aware of potential changes and create solutions or strategies to deal with these changes&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Leaders must manage and ease any transition caused by change
+e.g. restructuring, downsizing (redundancies etc.), growth&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Many of the issues are to do with HRM - i.e. people&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>好的领导者意识到潜在的变化，并创造解决方案或策略来应对这些变化&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>领导者必须管理和缓解任何由变化引起的过渡&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>例如重组、缩减规模(裁员等)、增长&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>许多问题都与人力资源管理有关，即人&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="trait-特质">Trait 特质
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>The concept that leaders are born as leaders&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>领导者天生就是领导者&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>they possess certain traits that will enable them to become leaders
+The theory is that the personality of individuals determines whether they will become leaders or not
+Often seen as gender biased – the concept of the“great man theory”&lt;/p>
+&lt;p>他们拥有使他们成为领导者的&lt;strong>某些特质&lt;/strong>
+该理论认为，&lt;strong>个人的个性决定了他们是否会成为领导者&lt;/strong>
+常被视为性别偏见的“伟人论”概念&lt;/p>
+&lt;h4 id="transformational">Transformational
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>a leader who treats relationships with followers in terms of motivation and commitment, influencing and inspiring followers to give more than mechanical compliance and to improve organisational performance&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>一位领导者在与追随者的关系中注重&lt;strong>激励和承诺&lt;/strong>，通过影响和激发追随者，使其不仅仅是&lt;strong>机械地遵循&lt;/strong>，而且提升&lt;strong>组织绩效&lt;/strong>。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="behavioural-theories-行为理论">behavioural theories 行为理论
+&lt;/h4>&lt;ul>
+&lt;li>Imply that leaders can be trained 表示领导者可通过培训（取得） – focus on the way of doing things 注重做事的方式&lt;/li>
+&lt;li>Structure based behavioural theories 基于结构的行为理论&lt;/li>
+&lt;li>focus on the way the leader structures work for subordinates – task orientated 基于任务&lt;/li>
+&lt;li>Relationship based behavioural theories 基于关系的行为理论&lt;/li>
+&lt;li>focus on the development and maintenance of relationships – process orientated 基于过程&lt;/li>
+&lt;/ul>
+&lt;h4 id="conversational-对话">conversational 对话
+&lt;/h4>&lt;ul>
+&lt;li>Focus on reducing negative messages sent out through the everyday actions of the business both externally and, crucially, internally 减少内部（重要）和外部传递的负面信息&lt;/li>
+&lt;li>Build relationships and sense of belonging and identity with the organisation 在组织中建立关系、归属感和认同感&lt;/li>
+&lt;li>that gets communicated to customers, etc. 传达给客户&lt;/li>
+&lt;/ul>
+&lt;h4 id="transactional-事务性">transactional 事务性
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>a leader who treats relationships with followers in terms of an exchange, giving followers what they want in return for what the leader desires, following prescribed tasks to pursue established goals&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>领导者将与追随者的关系视为一种交换，通过给予追随者他们想要的，以换取领导者所期望的，从而完成既定目标的过程。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>关注组织管理，关注程序和效率，管理当前问题。&lt;/p>
+&lt;h4 id="contingency-应变">contingency 应变
+&lt;/h4>&lt;ul>
+&lt;li>to be more successful, managers need to use different leadership styles at different times depending on the circumstances 不同时候使用不同的领导风格&lt;/li>
+&lt;li>Suggests leadership is not a fixed series of characteristics that can be transposed into different contexts 表示领导力不是固定特征，可以转换&lt;/li>
+&lt;/ul>
+&lt;p>使用何种风格取决于员工类型，业务文化，自然而然等等。&lt;/p>
+&lt;h4 id="factors-affecting-leadership-style-影响领导力风格的因素">Factors affecting leadership style 影响领导力风格的因素
+&lt;/h4>&lt;ul>
+&lt;li>风险 - 决策取决于包含的风险&lt;/li>
+&lt;li>业务类型 - 创意型，还是需求驱动&lt;/li>
+&lt;li>变革重要性&lt;/li>
+&lt;li>企业文化 - 长期持有，难以更改&lt;/li>
+&lt;li>任务特性 - 需要合作 指导还是结构等等&lt;/li>
+&lt;/ul>
+&lt;h2 id="lecture-17---motivation-business-communication">Lecture 17 - Motivation, Business Communication
+&lt;/h2>&lt;h3 id="本节结构梳理-1">本节结构梳理
+&lt;/h3>&lt;p>此课件分为激励与商务沟通两部分。前半部分给出了激励的定义，为什么要有激励，坏激励的结果，关于激励的两个理论（双因素，马斯洛需求层次），给出了激励的因素和基本元素。后半部分给出了沟通的定义，为什么要沟通，沟通的组成及各个部分的明确内容，随后给出了 9 步高效倾听的方法，给出了阻碍组织沟通的原因。&lt;/p>
+&lt;h3 id="motivation-激励">Motivation 激励
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>the cognitive decision-making process through which goaldirected behaviour is initiated, energised and directed and maintained&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>认知决策过程，通过其启动、激励、引导和维持目标导向行为的过程。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>管理者了解激励可影响员工行为&lt;/p>
+&lt;h3 id="poor-motivation-坏激励的结果">Poor motivation 坏激励的结果
+&lt;/h3>&lt;p>助记：产品少，产品烂，客户骂，客户走，成本高，员工走，员工骂。&lt;/p>
+&lt;ul>
+&lt;li>Lower productivity levels 低生产力&lt;/li>
+&lt;li>Poor quality products and services 产品服务质量差&lt;/li>
+&lt;li>High levels of complaints from customers 客户投诉&lt;/li>
+&lt;li>Loss of customers with subsequently lower revenues 客户流失，收入下降&lt;/li>
+&lt;li>Higher costs 高成本&lt;/li>
+&lt;li>Higher staff turnover 高员工流失&lt;/li>
+&lt;li>Poor industrial relations 劳资关系差&lt;/li>
+&lt;/ul>
+&lt;p>助记：团队停，个人死，文化断，沟通乱&lt;/p>
+&lt;ol>
+&lt;li>Teams may not function appropriately 团队无法正常工作&lt;/li>
+&lt;li>Individuals may be placed in positions that donot maximise or utilise their skills 个人无法最大发挥&lt;/li>
+&lt;li>The culture of the business is not shared 企业文化不流通&lt;/li>
+&lt;li>Communication and decision making can be affected and mistakes occur 影响沟通决策，犯错&lt;/li>
+&lt;/ol>
+&lt;p>都会影响业务和客户的关系。&lt;/p>
+&lt;h3 id="studies-and-theories-on-motivation-关于激励的研究和理论">Studies and theories on motivation 关于激励的研究和理论
+&lt;/h3>&lt;h4 id="herzberg-的双因素影响理论">Herzberg 的双因素影响理论
+&lt;/h4>&lt;ul>
+&lt;li>Hygiene factors 保健因素（一般只带来消极情感）&lt;/li>
+&lt;li>Motivation factors 激励因素（一般与积极有关，有时也涉及消极情感）&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228200814287.png"
+width="1003"
+height="310"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228200814287_hu_80c370ba4be05328.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228200814287_hu_54091dc96770c9a9.png 1024w"
+loading="lazy"
+alt="image-20231228200814287"
+class="gallery-image"
+data-flex-grow="323"
+data-flex-basis="776px"
+>&lt;/p>
+&lt;h4 id="maslow-马斯洛需求层次理论">Maslow 马斯洛需求层次理论
+&lt;/h4>&lt;p>大多数需求与生理心理生存有关&lt;/p>
+&lt;p>需求实现从下至上&lt;/p>
+&lt;p>自我实现的需要是一个健康个体的主要动机，自我实现意味着个体潜能充分发挥，使其成为所能实现的所有。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228200856772.png"
+width="862"
+height="597"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228200856772_hu_7a620cca8edea307.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228200856772_hu_bc6ff9ed42fbd943.png 1024w"
+loading="lazy"
+alt="image-20231228200856772"
+class="gallery-image"
+data-flex-grow="144"
+data-flex-basis="346px"
+>&lt;/p>
+&lt;h3 id="motivating-factors-激励因素">Motivating Factors 激励因素
+&lt;/h3>&lt;p>助记：尊重我，鼓励我，认可我，工作有挑战性，工作有保障，工作有创意，财务安全&lt;/p>
+&lt;ol>
+&lt;li>Individual respect&lt;/li>
+&lt;li>Challenging work&lt;/li>
+&lt;li>Encouragement from management&lt;/li>
+&lt;li>Financial security&lt;/li>
+&lt;li>Opportunities to express creativity&lt;/li>
+&lt;li>Job security&lt;/li>
+&lt;li>Recognition from others&lt;/li>
+&lt;/ol>
+&lt;h3 id="elements-of--work-motivation-工作激励的元素">Elements of Work Motivation 工作激励的元素
+&lt;/h3>&lt;p>助记：行为，努力，坚持&lt;/p>
+&lt;ul>
+&lt;li>Direction of Behaviour - 选择什么行为&lt;/li>
+&lt;li>Level of Effort - 付出多少努力&lt;/li>
+&lt;li>Level of Persistence - 遇到困难时，坚持多长时间&lt;/li>
+&lt;/ul>
+&lt;h3 id="communication-沟通">Communication 沟通
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>The communication process involves the transmission of information and the exchange of meaning between at least two people&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>沟通过程包括至少两个人之间信息的传递和意义的交换&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>需要沟通的原因：好沟通能鼓励激励员工，缺少沟通或错误方法消息会导致矛盾，没激励。&lt;/p>
+&lt;h3 id="沟通的组成">沟通的组成
+&lt;/h3>&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203045253.png"
+width="1005"
+height="603"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203045253_hu_d199b272f85f930b.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203045253_hu_4f98063832950d15.png 1024w"
+loading="lazy"
+alt="image-20231228203045253"
+class="gallery-image"
+data-flex-grow="166"
+data-flex-basis="400px"
+>&lt;/p>
+&lt;ul>
+&lt;li>媒介：口头，纸，电子，图像和视觉&lt;/li>
+&lt;li>价值：激励，明确管理，反思，协调组织&lt;/li>
+&lt;li>目标：员工，客户，股东，供应商，本地社区&lt;/li>
+&lt;li>消息：目标，意图，类型，是否清晰，重要性&lt;/li>
+&lt;li>阻碍：语言，技术内容，无视反馈，情绪，文化，缺少信任，层次结构&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203745706.png"
+width="400"
+height="244"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203745706_hu_68455d1e6584f574.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203745706_hu_19e45122eb993374.png 1024w"
+loading="lazy"
+alt="image-20231228203745706"
+class="gallery-image"
+data-flex-grow="163"
+data-flex-basis="393px"
+>&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203753156.png"
+width="358"
+height="283"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203753156_hu_bfe5e04f101806d6.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203753156_hu_c0d9af8b1a86c2ea.png 1024w"
+loading="lazy"
+alt="image-20231228203753156"
+class="gallery-image"
+data-flex-grow="126"
+data-flex-basis="303px"
+>&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203800224.png"
+width="460"
+height="243"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203800224_hu_48f555d82b7d651d.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203800224_hu_12e63e40b09b18d3.png 1024w"
+loading="lazy"
+alt="image-20231228203800224"
+class="gallery-image"
+data-flex-grow="189"
+data-flex-basis="454px"
+>&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203806150.png"
+width="348"
+height="283"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203806150_hu_bdf2fc502eea511a.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203806150_hu_7a60f67144378b51.png 1024w"
+loading="lazy"
+alt="image-20231228203806150"
+class="gallery-image"
+data-flex-grow="122"
+data-flex-basis="295px"
+>&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203811360.png"
+width="354"
+height="349"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203811360_hu_f7a4c92530aadedd.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231228203811360_hu_5a58dea5f87cf916.png 1024w"
+loading="lazy"
+alt="image-20231228203811360"
+class="gallery-image"
+data-flex-grow="101"
+data-flex-basis="243px"
+>&lt;/p>
+&lt;h3 id="nine-steps-to-effective-listening-九步高效倾听">Nine Steps to Effective Listening 九步高效倾听
+&lt;/h3>&lt;p>助记：我也想编，但是这堆东西太勾史了，凑合着记吧。&lt;/p>
+&lt;ol>
+&lt;li>Face the speaker and maintain eye contact. 面朝说话者，眼神交互&lt;/li>
+&lt;li>Be attentive, yet relaxed. 关注且放松&lt;/li>
+&lt;li>Keep an open mind to the speaker’s message – try to feel what the speaker is feeling. 共感&lt;/li>
+&lt;li>Listen to the words and try to picture what the speaker is saying. 尝试描绘&lt;/li>
+&lt;li>Do not interrupt and do not impose your &amp;ldquo;solutions” 不要打断，不要强加&lt;/li>
+&lt;li>Wait for the speaker to pause to ask clarifying questions only to ensure understanding of something that has been said (avoiding questions that disrupt the speaker&amp;rsquo;s train of thought) 不要打断思路&lt;/li>
+&lt;li>Give the speaker regular feedback, e.g. summarize, reflect feelings etc. 要有反馈，例如总结或表示情感等&lt;/li>
+&lt;li>Pay attention to nonverbal cues &amp;ndash; to feelings, tone of voice, inflection, facial expressions, gestures, posture. 注意非语言交流&lt;/li>
+&lt;li>Be aware of potential barriers that impact your ability to listen effectively. 要注意到自己也存在障碍&lt;/li>
+&lt;/ol>
+&lt;h3 id="barriers-to-effective-organisational-communication-组织高效沟通的阻碍">Barriers to Effective Organisational Communication 组织高效沟通的阻碍
+&lt;/h3>&lt;ul>
+&lt;li>Organisation Size 组织规模越大越复杂，沟通越难。&lt;/li>
+&lt;/ul>
+&lt;p>助记：位太高，太专业，地理远，层次多&lt;/p>
+&lt;ul>
+&lt;li>高级管理者对员工遥远&lt;/li>
+&lt;li>部门很专业，互相不理解&lt;/li>
+&lt;li>地理距离导致决策者的隔离&lt;/li>
+&lt;li>权力层次复杂，信息传递层次多，可能导致失真或阻断&lt;/li>
+&lt;/ul>
+&lt;h2 id="lecture-18---corporate-social-responsibility-csr">Lecture 18 - Corporate Social Responsibility (CSR)
+&lt;/h2>&lt;h3 id="本节结构梳理-2">本节结构梳理
+&lt;/h3>&lt;p>本节从社会责任讲起，介绍了何为社会责任，为什么要承担社会责任，社会责任包含什么，给出了企业的外部代价和外部获益，给出企业各个利益相关者及各自具体的责任考量，讨论了企业为什么要和不要承担社会责任。随后介绍了公司治理与道德、怎样实现道德，以及绿色消费、环保等概念。&lt;/p>
+&lt;h3 id="corporate-social-responsibility-csr--企业社会责任">Corporate Social Responsibility (CSR) 企业社会责任
+&lt;/h3>&lt;p>助记：第一个是对小的（周边的人和社区），第二个是对大的（社会，环境，国际，道德）&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>A corporation should be held accountable for any of its actions that affect people, their communities and their environment (also known as their stakeholders). It implies that negative business impacts on people and society should be acknowledged and corrected if at all possible&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>一个公司应该对其影响&lt;strong>人们、他们的社区和环境&lt;/strong>(也被称为他们的利益相关者)的任何行为负责。这意味着，如果可能的话，应该承认和&lt;strong>纠正&lt;/strong>商业对人和社会的&lt;strong>负面&lt;/strong>影响&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>The responsibility of an organization for the impacts of its decisions and activities on society and the environment, resulting in ethical behavior and transparency which contributes to sustainable development, including the health and well-being of society; takes into account the expectations of stakeholders; complies with current laws and is consistent with international standards of behavior; and is integrated throughout the organization and implemented in its relations.&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>一个组织对其决定和活动对社会和环境的&lt;strong>影响&lt;/strong>所承担的责任，从而导致有助于可持续发展，包括社会的&lt;strong>健康和福祉&lt;/strong>的&lt;strong>道德行为和透明度&lt;/strong>;考虑利益相关者的期望；遵守现行法律，符合&lt;strong>国际行为标准&lt;/strong>；并在整个组织中整合并在其关系中实施。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="为什么要承担社会责任">为什么要承担社会责任
+&lt;/h3>&lt;ul>
+&lt;li>growing belief amongst many people that organisations have a duty to society greater than simply providing goods and services 人们认为企业有社会责任，不只是提供产品和服务&lt;/li>
+&lt;li>Commercial organisations should have a role in society alongside that of non-commercial entities such as the family 商业企业在社会中、非商业实体中也有作用&lt;/li>
+&lt;li>Companies that operate in a socially responsible way strengthen their reputations 名誉声誉 决定客户和合作伙伴是否配合，决定在社区中的站位&lt;/li>
+&lt;li>CSR goes beyond simple philanthropy and is more about corporate behaviour than it is about a company&amp;rsquo;s charitable donation budget 社会责任不是简单的做慈善，是企业行为（做慈善也很重要）&lt;/li>
+&lt;/ul>
+&lt;h3 id="社会责任包含什么">社会责任包含什么
+&lt;/h3>&lt;p>助记：客户，雇员，企业，全部（特殊）群体&lt;/p>
+&lt;ul>
+&lt;li>your &lt;strong>goods and services&lt;/strong> meet customer requirements, and are provided in a fair way 满足客户需求，平等方式提供&lt;/li>
+&lt;li>your &lt;strong>employees&lt;/strong> are given responsibility and opportunities to work with the organisation in supporting community projects 雇员有责任支持社区项目&lt;/li>
+&lt;li>the organisation is involved in &lt;strong>activities&lt;/strong> and programmes that support the development of the &lt;strong>whole community&lt;/strong> 公司支持整个社区发展&lt;/li>
+&lt;li>you involve &lt;strong>all members&lt;/strong> of society by providing them with opportunities rather than marginalising them (e.g. disabled people) 支持全部群体（特殊群体），提供机会，而非边缘化&lt;/li>
+&lt;/ul>
+&lt;h3 id="costs-and-benefits-代价和获益">Costs and benefits 代价和获益
+&lt;/h3>&lt;h4 id="external-benefits-外部利益">External benefits 外部利益
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>Benefits that the organisation produces but does not receive any direct income from&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>组织产生但不从中获得任何直接收入的利益&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>例如，给公益捐款，提供市民使用回收设施，摆一个能报时的钟之类的。&lt;/p>
+&lt;h4 id="external-costs-外部代价">External costs 外部代价
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>Costs that are the output of an organisation’s production processes , but the costs are born by stakeholders, not the organisation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>代价是公司生产过程的产物，但代价由利益相关者承担，而不是公司&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>例如排放污染。有些立法要求企业对这些承担更多责任，企业需要把这些变成内部代价，或者减少外部代价。例如，减少排放（可能导致的内部代价就是生产成本增加），或者植树，抵消污染。&lt;/p>
+&lt;h3 id="stakeholders-利益相关者">Stakeholders 利益相关者
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>A person with an interest or concern in something&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>对某事有兴趣或关心的人&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>例如，公司老板算是利益相关者，公司周边可能受影响的人也是利益相关者。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229172135780.png"
+width="991"
+height="574"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229172135780_hu_a9c46d3be4694d66.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229172135780_hu_3f87f6a1675e23fd.png 1024w"
+loading="lazy"
+alt="image-20231229172135780"
+class="gallery-image"
+data-flex-grow="172"
+data-flex-basis="414px"
+>&lt;/p>
+&lt;h4 id="customers-客户">Customers 客户
+&lt;/h4>&lt;p>客户想知道产品怎样制作，想知道产品包含什么成分。&lt;/p>
+&lt;p>负责任的公司不会使用不道德手段吸引潜在用户购买他们不喜欢的产品。例如不需要的昂贵手机号，不经用户同意欺骗其更换到另一公司等。&lt;/p>
+&lt;h4 id="employees-雇员">Employees 雇员
+&lt;/h4>&lt;ol>
+&lt;li>社会会把雇员行为上升到公司。&lt;/li>
+&lt;li>不道德的劳动环境等等，例如侵犯工人权利。&lt;/li>
+&lt;/ol>
+&lt;p>UK’s Best Workplace 2022 (1,000+ employees) [4]&lt;/p>
+&lt;ul>
+&lt;li>Salesforce&lt;/li>
+&lt;li>CISCO&lt;/li>
+&lt;li>Hilton&lt;/li>
+&lt;/ul>
+&lt;h4 id="local-communities-本地社区">Local communities 本地社区
+&lt;/h4>&lt;p>Many organisations have recognised that having a strong corporate image within their local community is vital for success 许多组织已经认识到，在当地社区拥有强大的企业形象对成功至关重要&lt;/p>
+&lt;p>市场导向型企业倾向于让自己看起来像好邻居，会办些赞助，慈善，回收啥的。&lt;/p>
+&lt;p>讨论：是无私风险导致的还是利益导致的。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229173113264.png"
+width="955"
+height="639"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229173113264_hu_66ca8be52c473d9a.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229173113264_hu_c263d7de777f9fbc.png 1024w"
+loading="lazy"
+alt="image-20231229173113264"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="358px"
+>&lt;/p>
+&lt;h4 id="intermediaries-中介">Intermediaries 中介
+&lt;/h4>&lt;ul>
+&lt;li>Wholesalers 批发商&lt;/li>
+&lt;li>Retailers 零售商&lt;/li>
+&lt;li>Agents/franchisees 经销商&lt;/li>
+&lt;/ul>
+&lt;p>他们和客户、雇员的担心一致，需要考虑他们的担心。例如商业道德可能影响他们。&lt;/p>
+&lt;p>例子：麦当劳在很多方面被批评，例如产品对健康的影响，怎样对待员工，对环境的影响。在19年被起诉，因为延长工作时间导致工人工作到深夜，伤害工人健康，安全培训不足，母公司对特许公司和员工的责任问题等。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229173325548.png"
+width="958"
+height="645"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229173325548_hu_dada21ea652f081f.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229173325548_hu_739e2682c28a9988.png 1024w"
+loading="lazy"
+alt="image-20231229173325548"
+class="gallery-image"
+data-flex-grow="148"
+data-flex-basis="356px"
+>&lt;/p>
+&lt;p>反例：大公司会收到流言干扰。麦当劳曾被错误认为用蚯蚓袋鼠牛眼犰狳肉做汉堡。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229173654601.png"
+width="982"
+height="669"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229173654601_hu_d8e05f43f7fdeaca.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229173654601_hu_39f4e0ab0ebd23f1.png 1024w"
+loading="lazy"
+alt="image-20231229173654601"
+class="gallery-image"
+data-flex-grow="146"
+data-flex-basis="352px"
+>&lt;/p>
+&lt;h4 id="government-政府">Government 政府
+&lt;/h4>&lt;p>政府受社会压力影响，社会受企业外部代价影响。企业需要关注哪些行为是社会不可接受的，考虑是否需要减少，否则可能会被政府规章限制。&lt;/p>
+&lt;p>快速回应会带来好的印象，我们对大众负责，不用等到政府拿规章来管我们。&lt;/p>
+&lt;h4 id="suppliers-供应商">Suppliers 供应商
+&lt;/h4>&lt;p>好的供应商是成功的关键。&lt;/p>
+&lt;ul>
+&lt;li>Taking into account the needs and views of suppliers is a combination of shrewd business sense and good ethical practice&lt;/li>
+&lt;li>好的供应商是成功的关键考虑到供应商的需求和意见是精明的商业意识和良好的道德实践的结合&lt;/li>
+&lt;li>组织还应了解其供应商的做法，以确保他们也符合道德标准&lt;/li>
+&lt;li>供应商的不良做法可能会导致给你的组织带来负面形象 = 失去客户&lt;/li>
+&lt;/ul>
+&lt;p>例子：In 2008, the fashion chain Primark sacked three of its suppliers in India after an investigation for the BBC&amp;rsquo;s Panorama and The Observer uncovered children labouring in Indian refugee camps to produce some of its cheapest garments. The speed at which Primark acted meant that its standing in the high street remained secure at the time, its reputation repaired before many of its customers even noticed it was tarnished [6]&lt;/p>
+&lt;p>2008年，英国广播公司(BBC)《全景》(Panorama)和《观察家报》(the Observer)的一项调查发现，印度难民营里有童工为Primark生产一些最便宜的服装，随后，时装连锁店Primark解雇了三家印度供应商Primark迅速采取行动，这意味着它在大街上的地位在当时是稳固的，在许多顾客甚至没有注意到它的声誉受损之前，它的声誉就已经恢复了。[6]&lt;/p>
+&lt;p>&lt;strong>快时尚&lt;/strong>：服装需求大，公司为满足快时尚，牺牲质量换取数量，将生产转移到东南亚，出现了低工资，童工，化学品使用，缺少健康和安全保障等等。&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229175417445.png"
+width="718"
+height="454"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229175417445_hu_a7bc62791e1be54d.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229175417445_hu_d04b41d8e9f4714f.png 1024w"
+loading="lazy"
+alt="image-20231229175417445"
+class="gallery-image"
+data-flex-grow="158"
+data-flex-basis="379px"
+>&lt;/p>
+&lt;h4 id="financial-community-金融界">Financial community 金融界
+&lt;/h4>&lt;p>包括支持过你的、正在支持你的、未来可能支持你的机构和个人。&lt;/p>
+&lt;p>金融界不喜欢你，你就拿不到投资。很多大企业花大代价说服投资者，他们是成功的、负责任的公司。&lt;/p>
+&lt;h3 id="为什么企业要承担社会责任">为什么企业【要】承担社会责任？
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Altruistic 利他主义上&lt;/strong> - the organisation feels that it has a duty to think about the needs of society not simply the need to make a profit 企业认为有责任满足社会需求，不只是挣钱&lt;/li>
+&lt;li>&lt;strong>Pragmatic 务实精神上&lt;/strong> - 从社会责任，尤其是环境政策角度上，是增加企业知名度，获取更多收入的机会&lt;/li>
+&lt;li>大多数企业出于以上两种的综合考量&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>企业社会责任和消费者需求的变化消费者财富的增加，意味着外部利益对消费者来说变得越来越重要&lt;/li>
+&lt;li>马斯洛的需求层次理论认为，消费者的动机是他们最低层次的未满足需求&lt;/li>
+&lt;li>当基本需求得到满足时，更高层次的需求会影响他们的购买行为&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229181056005.png"
+width="967"
+height="415"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229181056005_hu_a3ce81776144cb97.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229181056005_hu_47fdba6c0bafc111.png 1024w"
+loading="lazy"
+alt="image-20231229181056005"
+class="gallery-image"
+data-flex-grow="233"
+data-flex-basis="559px"
+>&lt;/p>
+&lt;h3 id="为什么企业不要承担社会责任">为什么企业【不要】承担社会责任？
+&lt;/h3>&lt;ul>
+&lt;li>
+&lt;p>There are two main criticisms of CSR&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Philosophical - Companies should concentrate on what they are best at - i.e. making money&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Pragmatic - Critics see CSR as being a form of short-term manipulation of stakeholders by companies&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>对企业社会责任的批评主要有两种&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>**哲学上的：**公司应该专注于他们最擅长的事情——即赚钱&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>**务实主义上的：**批评人士认为，企业社会责任是企业短期操纵利益相关者的一种形式&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>The philosophical criticism：公司应该专注于他们最擅长的事情——即赚钱。公司对社会做出贡献的任何尝试都是对其客户征税的一种形式。消费者应该自由地把这笔钱作为“税”花在他们想要支持的东西上，或者政府应该资助所有的社会需求。当企业处于垄断地位，消费者没有选择的时候，这种观点就更为强烈。&lt;/p>
+&lt;p>The pragmatic criticism：实用主义批评批评者认为，企业社会责任是企业对利益相关者进行短期操纵的一种形式。他们认为企业社会责任是为了提高企业绩效，而不仅仅是为了社会利益。公司只支持“时尚”的事业来提升他们的公众形象，而不一定是最值得的事业。例如支持儿童福利慈善机构却忽视心理健康慈善机构。&lt;/p>
+&lt;p>其他批评：&lt;/p>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229181739721.png"
+width="787"
+height="592"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229181739721_hu_16abcb69b1ad6fa0.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229181739721_hu_8b3bfb61b02c56e1.png 1024w"
+loading="lazy"
+alt="image-20231229181739721"
+class="gallery-image"
+data-flex-grow="132"
+data-flex-basis="319px"
+>&lt;/p>
+&lt;h3 id="corporate-governance-公司治理">Corporate Governance 公司治理
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>定义&lt;/th>
+&lt;th>ensuring that an organisation is run in a responsible manner with due regard to its stakeholders&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>翻译&lt;/td>
+&lt;td>确保组织以负责任的方式运作，充分考虑其利益相关者&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="为什么要搞公司治理">为什么要搞公司治理
+&lt;/h3>&lt;ol>
+&lt;li>For many years, companies only had to report basic financial information (e.g. profit &amp;amp; loss)&lt;/li>
+&lt;li>As long as the company apparently made a profit, investors were happy&lt;/li>
+&lt;li>In the late 1990s, there was a series of scandals in which executives badly and fraudulently mismanaged companies&lt;/li>
+&lt;li>The financial detail contained in the standard annual reports was insufficient to protect investors from bad management, so Corporate Governance was establishedEBU5402 - Enterprise Management&lt;/li>
+&lt;/ol>
+&lt;p>多年来，公司只需要报告基本的财务信息(如利润和亏损)。只要公司明显盈利，投资者就会高兴。上世纪90年代末，出现了一系列丑闻，高管们对公司的管理不善，而且存在欺诈行为。标准年度报告中包含的财务细节不足以保护投资者免受管理不善的影响，因此建立了公司治理。&lt;/p>
+&lt;h3 id="公司治理的关键概念">公司治理的关键概念
+&lt;/h3>&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229182247699.png"
+width="853"
+height="526"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229182247699_hu_cfc7d9261095a0fd.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229182247699_hu_6a6f7d2bb48f5a82.png 1024w"
+loading="lazy"
+alt="image-20231229182247699"
+class="gallery-image"
+data-flex-grow="162"
+data-flex-basis="389px"
+>&lt;/p>
+&lt;ol>
+&lt;li>防止一个或多个个人滥用权力的内部控制制度 - 首席执行官和董事长不应该是同一个人&lt;/li>
+&lt;li>长期工资与绩效报酬之间的差额 - 高级职员的薪酬方式应该是可见的&lt;/li>
+&lt;li>承认员工是重要的利益相关者&lt;/li>
+&lt;li>组织与其审计师之间的关系应该保持一定的距离 - 许多丑闻都是审计人员不尽职的结果&lt;/li>
+&lt;li>参考英国电信的年度报告，搜索“治理”部分&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229182426888.png"
+width="880"
+height="607"
+srcset="https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229182426888_hu_c44e7e6197b8e59.png 480w, https://katomelon.github.io/blog/blog/p/2023-em-question-1/em-question1.assets/image-20231229182426888_hu_a60a80b9362dd75c.png 1024w"
+loading="lazy"
+alt="image-20231229182426888"
+class="gallery-image"
+data-flex-grow="144"
+data-flex-basis="347px"
+>&lt;/p>
+&lt;ul>
+&lt;li>董事会应包括执行董事和非执行董事&lt;/li>
+&lt;li>执行董事是一个组织的高级经理 - 执行董事通常是全职的&lt;/li>
+&lt;li>非执行董事是公司董事会的成员，但不构成执行管理团队的一部分 - 不是公司的雇员，非执行董事通常是兼职的&lt;/li>
+&lt;/ul>
+&lt;h3 id="ethics-vs-morals">Ethics vs. Morals
+&lt;/h3>&lt;p>Morals 更指代个人，Ethics 指代其应用到的社会系统。也就是说 Ethics 可以作为全体的行为标准，例如国家道德，社会道德，企业道德，职业道德，家庭道德之类的。&lt;/p>
+&lt;p>Ethics 与 Legal 区分。例如搞广告吸引小孩劝说父母买自家生产的不健康食物，属于不道德但是不算违法。&lt;/p>
+&lt;h3 id="being-ethical">Being ethical
+&lt;/h3>&lt;h4 id="premium-products-高端产品">premium products 高端产品
+&lt;/h4>&lt;p>以 Ethics 的方式运作会让消费者更愿意购买其产品。例如，消费者更愿意买散养鸡的鸡蛋而不是饲养场的，消费者会为平等交易付钱等等。&lt;/p>
+&lt;h4 id="training-staff-员工培训">training staff 员工培训
+&lt;/h4>&lt;p>不 Ethic 的行为会损害商业，所以要培训员工，让他们了解自己该怎么做，什么是 unethical 的行为。&lt;/p>
+&lt;p>例如，要让员工了解自己正在卖的商品，了解用户需求，把自己卖的产品和用户需求联系起来。&lt;/p>
+&lt;h4 id="rewards-奖励-1">rewards 奖励
+&lt;/h4>&lt;p>使用高效的奖励制度可以阻止员工使用 unethical 的方式谋利。例如提成（Commission-based rewards）制度会让员工更倾向于卖贵的而不是最合适的，是个反例。提成是指基本工资低，根据销售额的百分比发提成。&lt;/p>
+&lt;h4 id="technology-技术">technology 技术
+&lt;/h4>&lt;p>新技术带来了新道德问题。例如有的企业在库存里用 RFID 标记货物，卖掉之后有人担心这玩意能追踪隐私。&lt;/p>
+&lt;h3 id="ecological-concerns-环境担忧">Ecological concerns 环境担忧
+&lt;/h3>&lt;p>消费者越来越担心环境。两个主要的点是：全球变换和资源枯竭。通常认为是企业贪婪导致的，事实上消费者贪婪也是个重要因素。&lt;/p>
+&lt;h4 id="global-warming-全球变暖">global warming 全球变暖
+&lt;/h4>&lt;p>通常认为气温在上升，人类活动导致的。结果可能是海平面上升，极端天气，降水改变，农业受影响。不知道会多严重，工业和消费者应该与此抗争。&lt;/p>
+&lt;h4 id="depletion-of-resources-资源枯竭">depletion of resources 资源枯竭
+&lt;/h4>&lt;p>很多资源有限，例如石油和煤炭。一旦用完无法再生。其他很多资源被使用的速度大于再生速度，例如某种鱼。资源在被破坏以获取更有利可图的活动。&lt;/p>
+&lt;h3 id="ecological-responsibility-生态责任">Ecological responsibility 生态责任
+&lt;/h3>&lt;p>商业一般认为与环保相冲突，市场导向的公司不能忽视客户对环境的关切。即公司也应表现出对环保的关切。&lt;/p>
+&lt;h3 id="green-consumerism-绿色消费">Green consumerism 绿色消费
+&lt;/h3>&lt;ul>
+&lt;li>
+&lt;p>The &amp;lsquo;green&amp;rsquo; (i.e. environmentally aware) consumer can provide businesses with opportunities as well as problems&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>This &amp;lsquo;green&amp;rsquo; demand can be used in marketing strategies e.g. promotion&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>But, this needs to be backed by environmentally sound products and services&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Going &amp;lsquo;green&amp;rsquo; can save money&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Obtaining goods from local suppliers cuts costs in the distribution channel&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Using recyclable shipping materials may cut costs&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>绿色”(即有环保意识的)消费者可以为企业提供机会，也可以为企业带来问题&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>这种“绿色”需求可以用于营销策略 - 例如促销 - 但是，这需要以无害环境的产品和服务为后盾&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“绿色环保”可以省钱 - 从当地供应商那里获取货物可以降低分销渠道的成本，使用可回收的运输材料可以降低成本&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Legislation on environmentally sensitive practices has led to increased costs for organisations.Those organisations who acted ahead of the legislation have gained experience and competitive advantage&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>对环境敏感的做法的立法导致机构的成本增加。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>那些在立法之前采取行动的组织已经获得了经验和竞争优势&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>
